@@ -77,7 +77,6 @@
                         <div style="text-align:center;" data-ng-if="draftTime">
                             <h4>{{selPlayer?'Add '+selPlayer.name + ' for ' +selField.name+ '?':'On the Clock:' +selField.name+ ', Round '+ selField.round}}</h4>
                             <button class="btn btn-success" data-ng-click="draftPlayer()" data-ng-if="selPlayer">Add Player</button>
-                            <button class="btn btn-success" data-ng-click="simPick()" data-ng-if="!selPlayer">Sim Pick</button>
                         </div>
                         <br>
                         <div class="row" data-ng-if="selField">
@@ -111,9 +110,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div style="text-align:center;" data-ng-if="!draftOver">
-                            <button class="btn btn-lg btn-success" data-ng-click="startDraft()" data-ng-if="keeperTime"> START DRAFT </button>
+                        <div style="text-align: center;" data-ng-if="draftTime">
+                            <button class="btn btn-primary" data-ng-click="simPick()" data-ng-if="!selPlayer">Sim Pick</button>
                             <br>
+                        </div>
+                        <div style="text-align:center;" data-ng-if="keeperTime">
+                            <button class="btn btn-lg btn-success" data-ng-click="startDraft()"> START DRAFT </button>
+                            <br>
+                        </div>
+                        <div style="text-align: center;">
                             <br>
                             <button class="btn btn-lg btn-primary" data-ng-click="simDraft()" data-ng-if="!draftOver"> SIMULATE DRAFT </button>
                         </div>
