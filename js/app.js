@@ -4,11 +4,23 @@ angular
         var init = function(){
 
             $scope.players = [];
+            $scope.keepers = [];
+            $scope.showDraftBoard = false;
+            $scope.keeperTime = true;
+            $scope.draftOver = false;
+            $scope.draftTime = false;
+            $scope.selPlayer=null;
+            $scope.selField=null;
+            $scope.config = null;
             LoadPlayersService.fetch().then(function(data) {
                 $scope.players= data.players;
                 $scope.players.each(function(n){
                     n.available = true;
                 })
+                if (data.configOptions){
+                    console.log("YAHOOEY");
+                    $scope.configOptions = data.configOptions;
+                }
             })
 
             $scope.colorScale= {
@@ -35,15 +47,36 @@ angular
             $scope.editNameModal.$promise.then($scope.editNameModal.show);
         };
 
+        $scope.loadConfig = function(config){
+            $scope.config = config;
+        }
+
         $scope.createBoard = function(){
-            for (var i = 1; i <= $scope.teams.number ; i++){
-                $scope.teams.teams.push({name:'Team '+i,number:i,picks:{},players:[]});
+            if ($scope.config){
+                $scope.teams = $scope.config.config.teams;
+                $scope.rounds = $scope.config.config.rounds;
+            }
+            if ($scope.teams.teamNames){
+                for (var i = 1; i <= $scope.teams.number ; i++){
+                    $scope.teams.teams.push({name:$scope.teams.teamNames[i-1],number:i,picks:{},players:[]});
+                }
+            }else {
+                for (var i = 1; i <= $scope.teams.number ; i++){
+                    $scope.teams.teams.push({name:'Team '+i,number:i,picks:{},players:[]});
+                }
             }
             for (var i = 1; i <= $scope.rounds.number ; i++){
                 $scope.rounds.rounds.push({number:i,picks:{}});
             }
 
             $scope.showDraftBoard = true;
+            if ($scope.config){
+                if ($scope.config.config.keepers){
+                    $scope.keepers = $scope.config.config.keepers;
+                    $scope.addKeepers();
+                }
+            }
+            $scope.keeperTime = true;
         }
 
         $scope.selectField = function(round,team){
@@ -58,7 +91,51 @@ angular
             $scope.filter = filter;
         }
 
+        $scope.startDraft = function(){
+            $scope.draftTime= true;
+            $scope.keeperTime = false;
+
+            $scope.selField = $scope.nextOnTheClock();
+        }
+
+        $scope.draftPlayer = function(){
+            $scope.addKeeper();
+            $scope.selField = $scope.nextOnTheClock();
+        }
+
+        $scope.simPick = function(){
+            $scope.findBestPlayer($scope.selField.round,$scope.selField.team);
+            $scope.selField = $scope.nextOnTheClock();
+        }
+
+        $scope.nextOnTheClock = function(){
+            $scope.selPlayer = null;
+            $scope.selField = null;
+            for (var i = 1; i <= $scope.rounds.number ; i++){
+                if (i%2 == 0){
+                    for (var j = $scope.teams.number;j>0;j--){
+                        if ($scope.rounds.rounds[i-1].picks[j]){
+                        } else {
+                            var field = {round:i, team:j, name:$scope.teams.teams[j-1].name};
+                            return field;
+                        }
+                    }
+                } else {
+                    for (var j = 1;j<=$scope.teams.number;j++){
+                        if ($scope.rounds.rounds[i-1].picks[j]){
+                        } else{
+                            var field = {round:i, team:j, name:$scope.teams.teams[j-1].name};
+                            return field;
+                        }
+                    }
+                }
+            }
+            $scope.draftOver = true;
+            $scope.draftTime = false;
+        }
+
         $scope.simDraft = function(){
+            $scope.keeperTime = false;
             $scope.selPlayer = null;
             $scope.selField = null;
             for (var i = 1; i <= $scope.rounds.number ; i++){
@@ -73,6 +150,7 @@ angular
                 }
             }
             $scope.draftOver = true;
+            $scope.draftTime = false;
         }
 
         $scope.findBestPlayer = function(round,team){
@@ -107,6 +185,18 @@ angular
             $scope.selPlayer.available = false;
             $scope.selPlayer = null;
             $scope.selField = null;
+        }
+
+        $scope.addKeepers = function(){
+            for (var i = 0; i < $scope.keepers.length; i++){
+                var keep = $scope.keepers[i];
+                $scope.selField = {round:keep.round_num, team:keep.team_num, name:$scope.teams.teams[keep.team_num-1].name}
+                var player = $scope.players.filter(function(player){
+                    return player.name.indexOf(keep.player) != -1;
+                });
+                $scope.selPlayer = player[0];
+                $scope.addKeeper();
+            }
         }
 
         $scope.starter = function(player, team){
@@ -198,6 +288,10 @@ angular
                     return true;
                 }
             } else {return false;}
+        }
+
+        $scope.resetDraft = function(){
+            init();
         }
 
         $scope.showPlayers = function(){

@@ -1,4 +1,4 @@
-{"players":[
+{ "players":[
     {
         "name":"LeVeon Bell (S2)",
         "tm":"PIT",
@@ -1862,4 +1862,118 @@
         "ps":0,
         "pos":"QB"
     }
-]}
+],
+  "configOptions":[
+    { "name":"LA LIGA",
+      "config":{
+        "teams":{
+          "number":10,
+          "teamNames":["Jeff","Justin","Norm","Ryan","Steve L","Gordon","Steve S","Bryant","Harrison","Colin"],
+          "teams":[]
+        },
+        "rounds":{
+          "number":16,
+          "rounds":[]
+        },
+        "keepers":[
+          {
+            "team_num":1,
+            "round_num":9,
+            "player":"CJ Anderson"
+          },
+          {
+            "team_num":1,
+            "round_num":14,
+            "player":"Jeremy Hill"
+          },
+          {
+            "team_num":2,
+            "round_num":3,
+            "player":"Julio Jones"
+          },
+          {
+            "team_num":2,
+            "round_num":9,
+            "player":"Jordan Matthews"
+          },
+          {
+            "team_num":3,
+            "round_num":2,
+            "player":"Aaron Rodgers"
+          },
+          {
+            "team_num":3,
+            "round_num":9,
+            "player":"Justin Forsett"
+          },
+          {
+            "team_num":4,
+            "round_num":8,
+            "player":"Russell Wilson"
+          },
+          {
+            "team_num":4,
+            "round_num":9,
+            "player":"Odell Beckham"
+          },
+          {
+            "team_num":5,
+            "round_num":15,
+            "player":"Chris Ivory"
+          },
+          {
+            "team_num":6,
+            "round_num":4,
+            "player":"LeVeon Bell"
+          },
+          {
+            "team_num":6,
+            "round_num":5,
+            "player":"Andrew Luck"
+          },
+          {
+            "team_num":7,
+            "round_num":2,
+            "player":"Demaryius Thomas"
+          },
+          {
+            "team_num":7,
+            "round_num":7,
+            "player":"Greg Olsen"
+          },
+          {
+            "team_num":8,
+            "round_num":3,
+            "player":"Marshawn Lynch"
+          },
+          {
+            "team_num":8,
+            "round_num":6,
+            "player":"Rob Gronkowski"
+          },
+          {
+            "team_num":9,
+            "round_num":1,
+            "player":"Jimmy Graham"
+          },
+          {
+            "team_num":9,
+            "round_num":2,
+            "player":"Matt Forte"
+          },
+          {
+            "team_num":10,
+            "round_num":6,
+            "player":"TY Hilton"
+          },
+          {
+            "team_num":10,
+            "round_num":14,
+            "player":"Mark Ingram"
+          }
+        ]
+      }
+
+    }
+  ]
+}
