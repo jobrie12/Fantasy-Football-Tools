@@ -179,12 +179,86 @@ angular
         $scope.addKeeper = function(){
             $scope.selPlayer.round = $scope.selField.round;
             $scope.selPlayer.team = $scope.selField.name;
-            $scope.teams.teams[$scope.selField.team - 1].picks[$scope.selField.round] = $scope.selPlayer;
-            $scope.teams.teams[$scope.selField.team - 1].players.push($scope.selPlayer);
+            var team = $scope.teams.teams[$scope.selField.team - 1];
+            team.picks[$scope.selField.round] = $scope.selPlayer;
+            team.players.push($scope.selPlayer);
             $scope.rounds.rounds[$scope.selField.round - 1].picks[$scope.selField.team] = $scope.selPlayer;
             $scope.selPlayer.available = false;
             $scope.selPlayer = null;
             $scope.selField = null;
+
+            $scope.buildRoster(team);
+
+        }
+
+        $scope.buildRoster = function(team){
+            var starters = {
+                QB:0,
+                RB:0,
+                WR:0,
+                TE:0,
+                FLEX:0,
+                K:0,
+                DST:0,
+                BENCH:0
+            };
+
+            var cap = {
+                QB:1,
+                RB:2,
+                WR:2,
+                TE:1,
+                FLEX:2,
+                K:1,
+                DST:1,
+                BENCH:6
+            };
+
+            team.roster = {QB:[],RB:[],WR:[],TE:[],FLEX:[],K:[],DST:[],BENCH:[]};
+            team.players.each(function(n){
+                if (starters[n.pos] >= cap[n.pos]){
+                    if (['RB','WR','TE'].indexOf(n.pos) > -1){
+                        if (starters.FLEX == cap.FLEX){
+                            starters['BENCH']++;
+                            team.roster.BENCH.push(n);
+                        } else {
+                            starters['FLEX']++;
+                            team.roster.FLEX.push(n);
+                        }
+                    } else {
+                        starters['BENCH']++;
+                        team.roster.BENCH.push(n);
+                    }
+                } else {
+                    starters[n.pos]++;
+                    team.roster[n.pos].push(n);
+                }
+            });
+
+            while (team.roster.QB.length<cap.QB){
+                team.roster.QB.push({name:""});
+            }
+            while (team.roster.RB.length<cap.RB){
+                team.roster.RB.push({name:""});
+            }
+            while (team.roster.WR.length<cap.WR){
+                team.roster.WR.push({name:""});
+            }
+            while (team.roster.TE.length<cap.TE){
+                team.roster.TE.push({name:""});
+            }
+            while (team.roster.FLEX.length<cap.FLEX){
+                team.roster.FLEX.push({name:""});
+            }
+            while (team.roster.K.length<cap.K){
+                team.roster.K.push({name:""});
+            }
+            while (team.roster.DST.length<cap.DST){
+                team.roster.DST.push({name:""});
+            }
+            while (team.roster.BENCH.length<cap.BENCH){
+                team.roster.BENCH.push({name:""});
+            }
         }
 
         $scope.addKeepers = function(){
@@ -227,7 +301,7 @@ angular
                 K:1,
                 DST:1,
                 BENCH:6
-            }
+            };
 
             var max = {
                 QB:2,
