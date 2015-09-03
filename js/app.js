@@ -17,12 +17,12 @@ angular
                 WR:"red",
                 TE:"orange",
                 K:'purple',
-                DEF:'pink'
+                DST:'pink'
             }
 
             $scope.teams = {number:10, teams:[]};
             $scope.rounds = {number:16, rounds:[]};
-            $scope.filters = ['All','QB','RB','WR','TE','K','DEF'];
+            $scope.filters = ['All','QB','RB','WR','TE','K','DST'];
             $scope.filter = 'All';
             $scope.strategy = 'BVN';
 
@@ -117,7 +117,7 @@ angular
                 TE:0,
                 FLEX:0,
                 K:0,
-                DEF:0,
+                DST:0,
                 BENCH:0
             };
             var count = {
@@ -126,7 +126,7 @@ angular
                 WR:0,
                 TE:0,
                 K:0,
-                DEF:0
+                DST:0
             };
             var cap = {
                 QB:1,
@@ -135,7 +135,7 @@ angular
                 TE:1,
                 FLEX:2,
                 K:1,
-                DEF:1,
+                DST:1,
                 BENCH:6
             }
 
@@ -145,12 +145,12 @@ angular
                 WR:7,
                 TE:2,
                 K:1,
-                DEF:1
+                DST:1
             }
 
             if (team && $scope.strategy == 'BVN'){
                 var i = 0;
-                team.roster = {QB:[],RB:[],WR:[],TE:[],FLEX:[],K:[],DEF:[],BENCH:[]};
+                team.roster = {QB:[],RB:[],WR:[],TE:[],FLEX:[],K:[],DST:[],BENCH:[]};
                 team.players.each(function(n){
                     count[n.pos]++;
                     if (starters[n.pos] >= cap[n.pos]){
@@ -180,12 +180,12 @@ angular
                         if (starters['FLEX']<cap['FLEX']){
                             team.roster.FLEX.push(player);
                             return true;
-                        } else if (i < $scope.rounds.number - 2 + starters['K'] + starters['DEF']){
+                        } else if (i < $scope.rounds.number - 2 + starters['K'] + starters['DST']){
                             team.roster.BENCH.push(player);
                             return true;
                         } else return false;
                     } else if (player.pos == 'QB'){
-                        if (count['QB'] == 1 && i > 7 && i < $scope.rounds.number - 2 + starters['K'] + starters['DEF']){
+                        if (count['QB'] == 1 && i > 7 && i < $scope.rounds.number - 2 + starters['K'] + starters['DST']){
                             team.roster.BENCH.push(player);
                             return true;
                         } else return false;
