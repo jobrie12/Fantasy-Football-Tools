@@ -36,7 +36,8 @@ angular
             $scope.rounds = {number:16, rounds:[]};
             $scope.filters = ['All','QB','RB','WR','TE','K','DST'];
             $scope.filter = 'All';
-            $scope.strategy = 'BVN';
+            $scope.strategies = ['BVN','Equal']
+            $scope.strategy = 'Equal';
 
             $scope.editNameModal = $modal({scope: $scope, template: 'modal/editNameModal.tpl.html', show: false});
         }
@@ -108,6 +109,10 @@ angular
             $scope.selField = $scope.nextOnTheClock();
         }
 
+        $scope.recPick = function(){
+            $scope.findBestPlayer($scope.selField.round, $scope.selField.team,true);
+        }
+
         $scope.nextOnTheClock = function(){
             $scope.selPlayer = null;
             $scope.selField = null;
@@ -153,7 +158,7 @@ angular
             $scope.draftTime = false;
         }
 
-        $scope.findBestPlayer = function(round,team){
+        $scope.findBestPlayer = function(round,team,noadd){
             if ($scope.rounds.rounds[round-1].picks[team]){
                 $scope.selPlayer = null;
                 $scope.selField = null;
@@ -164,7 +169,7 @@ angular
                 while ($scope.selPlayer == null){
                     if ($scope.players[k].available == true){
                         var player = $scope.players[k];
-                        if ($scope.starter(player,fullteam)){
+                        if ($scope.starter(player,fullteam,k) == true){
                             $scope.selPlayer = player;
                         } else {
                             console.log("Passed on " + player.name);
@@ -172,7 +177,9 @@ angular
                     }
                     k++;
                 }
-                $scope.addKeeper();
+                if (!noadd){
+                    $scope.addKeeper();
+                }
             }
         }
 
@@ -273,7 +280,7 @@ angular
             }
         }
 
-        $scope.starter = function(player, team){
+        $scope.starter = function(player, team, index){
             var starters = {
                 QB:0,
                 RB:0,
@@ -312,34 +319,93 @@ angular
                 DST:1
             }
 
-            if (team && $scope.strategy == 'BVN'){
-                var i = 0;
-                team.roster = {QB:[],RB:[],WR:[],TE:[],FLEX:[],K:[],DST:[],BENCH:[]};
-                team.players.each(function(n){
-                    count[n.pos]++;
-                    if (starters[n.pos] >= cap[n.pos]){
-                        if (['RB','WR','TE'].indexOf(n.pos) > -1){
-                            if (starters.FLEX == cap.FLEX){
-                                starters['BENCH']++;
-                                team.roster.BENCH.push(n);
-                            } else {
-                                starters['FLEX']++;
-                                team.roster.FLEX.push(n);
-                            }
-                        } else {
+            var i = 0;
+            team.roster = {QB:[],RB:[],WR:[],TE:[],FLEX:[],K:[],DST:[],BENCH:[]};
+            team.players.each(function(n){
+                count[n.pos]++;
+                if (starters[n.pos] >= cap[n.pos]){
+                    if (['RB','WR','TE'].indexOf(n.pos) > -1){
+                        if (starters.FLEX == cap.FLEX){
                             starters['BENCH']++;
                             team.roster.BENCH.push(n);
+                        } else {
+                            starters['FLEX']++;
+                            team.roster.FLEX.push(n);
                         }
                     } else {
-                        starters[n.pos]++;
-                        team.roster[n.pos].push(n);
+                        starters['BENCH']++;
+                        team.roster.BENCH.push(n);
                     }
-                    i++;
-                });
+                } else {
+                    starters[n.pos]++;
+                    team.roster[n.pos].push(n);
+                }
+                i++;
+            });
 
-                if (count[player.pos] >=max[player.pos]){return false;}
+            if (count[player.pos] >=max[player.pos]){return false;}
+
+            if (team && $scope.strategy == 'BVN'){
+
 
                 if (starters[player.pos] >= cap[player.pos]){
+                    if (['RB','WR','TE'].indexOf(player.pos) > -1){
+                        if (starters['FLEX']<cap['FLEX']){
+                            team.roster.FLEX.push(player);
+                            return true;
+                        } else if (i < $scope.rounds.number - 2 + starters['K'] + starters['DST']){
+                            team.roster.BENCH.push(player);
+                            return true;
+                        } else return false;
+                    } else if (player.pos == 'QB'){
+                        if (count['QB'] == 1 && i > 7 && i < $scope.rounds.number - 2 + starters['K'] + starters['DST']){
+                            team.roster.BENCH.push(player);
+                            return true;
+                        } else return false;
+                    } else {
+                        console.log(player.pos);
+                        return false;
+                    }
+                } else {
+                    team.roster[player.pos].push(player);
+                    return true;
+                }
+            } else if ($scope.strategy == 'Equal'){
+                if (player.pos == 'RB'){
+                    var WRDiff = (count['RB'] - count['WR']) * .25;
+                    if (WRDiff > 0){
+                        var dex = index + 1;
+                        var nextPlayer = $scope.players[dex];
+                        while (nextPlayer.val > (player.val - WRDiff)){
+                            console.log(nextPlayer.val + " >? " + (player.val - WRDiff));
+                            if (nextPlayer.pos['WR'] && nextPlayer.available){
+                                return false;
+                            } else {
+                                dex = dex + 1;
+                                nextPlayer = $scope.players[dex];
+                                console.log(dex + " player: " + nextPlayer.name);
+                            }
+                        }
+                        return true;
+                    } return true;
+                } else if (player.pos == 'WR'){
+                    var RBDiff = (count['WR'] - count['RB']) * .25;
+                    if (RBDiff > 0){
+                        var dex = index + 1;
+                        var nextPlayer = $scope.players[dex];
+                        while (nextPlayer.val > (player.val - RBDiff)){
+                            console.log(nextPlayer.val + " >? " + (player.val - RBDiff));
+                            if (nextPlayer.pos['RB'] && nextPlayer.available){
+                                return false;
+                            } else {
+                                dex = dex + 1;
+                                nextPlayer = $scope.players[dex];
+                                console.log(dex + " player: " + nextPlayer.name);
+                            }
+                        }
+                        return true;
+                    } return true;
+                } else if (starters[player.pos] >= cap[player.pos]){
                     if (['RB','WR','TE'].indexOf(player.pos) > -1){
                         if (starters['FLEX']<cap['FLEX']){
                             team.roster.FLEX.push(player);

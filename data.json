@@ -540,15 +540,6 @@
         "pos":"WR"
     },
     {
-        "name":"Arian Foster (I)",
-        "tm":"HOU",
-        "bw":9,
-        "adp":5.6,
-        "val":1.7,
-        "ps":7,
-        "pos":"RB"
-    },
-    {
         "name":"Todd Gurley (I)",
         "tm":"STL",
         "bw":6,
@@ -898,6 +889,15 @@
         "val":0.3,
         "ps":1,
         "pos":"TE"
+    },
+    {
+        "name":"Arian Foster (I)",
+        "tm":"HOU",
+        "bw":9,
+        "adp":5.6,
+        "val":0.3,
+        "ps":7,
+        "pos":"RB"
     },
     {
         "name":"Tyler Eifert (TE1)",
