@@ -298,21 +298,21 @@
             "pos": "QB"
         },
         {
-            "name": "Randall Cobb (2)",
-            "tm": "GB",
-            "bw": 4,
-            "adp": 4.8,
-            "val": 3.3,
-            "ps": 0.31,
-            "pos": "WR"
-        },
-        {
             "name": "Jarvis Landry (1)",
             "tm": "MIA",
             "bw": 8,
             "adp": 5.1,
             "val": 3.3,
             "ps": 0.28,
+            "pos": "WR"
+        },
+        {
+            "name": "Randall Cobb (2)",
+            "tm": "GB",
+            "bw": 4,
+            "adp": 4.8,
+            "val": 3.3,
+            "ps": 0.31,
             "pos": "WR"
         },
         {
@@ -370,15 +370,6 @@
             "pos": "QB"
         },
         {
-            "name": "Thomas Rawls (1)",
-            "tm": "SEA",
-            "bw": 5,
-            "adp": 5.3,
-            "val": 2.9,
-            "ps": 0.31,
-            "pos": "RB"
-        },
-        {
             "name": "Matt Forte (1)",
             "tm": "NYJ",
             "bw": 11,
@@ -388,13 +379,13 @@
             "pos": "RB"
         },
         {
-            "name": "Larry Fitzgerald (2)",
-            "tm": "ARI",
-            "bw": 9,
-            "adp": 6.9,
-            "val": 2.8,
-            "ps": 0.18,
-            "pos": "WR"
+            "name": "Thomas Rawls (1)",
+            "tm": "SEA",
+            "bw": 5,
+            "adp": 5.3,
+            "val": 2.9,
+            "ps": 0.31,
+            "pos": "RB"
         },
         {
             "name": "Eric Decker (2)",
@@ -403,6 +394,15 @@
             "adp": 5.4,
             "val": 2.8,
             "ps": 0.2,
+            "pos": "WR"
+        },
+        {
+            "name": "Larry Fitzgerald (2)",
+            "tm": "ARI",
+            "bw": 9,
+            "adp": 6.9,
+            "val": 2.8,
+            "ps": 0.18,
             "pos": "WR"
         },
         {
@@ -415,15 +415,6 @@
             "pos": "RB"
         },
         {
-            "name": "Doug Baldwin (1)",
-            "tm": "SEA",
-            "bw": 5,
-            "adp": 6.2,
-            "val": 2.6,
-            "ps": 0.16,
-            "pos": "WR"
-        },
-        {
             "name": "Carlos Hyde (1)",
             "tm": "SF",
             "bw": 8,
@@ -433,12 +424,12 @@
             "pos": "RB"
         },
         {
-            "name": "Jordan Matthews (1)",
-            "tm": "PHI",
-            "bw": 4,
-            "adp": 6.9,
-            "val": 2.4,
-            "ps": 0.13,
+            "name": "Doug Baldwin (1)",
+            "tm": "SEA",
+            "bw": 5,
+            "adp": 6.2,
+            "val": 2.6,
+            "ps": 0.16,
             "pos": "WR"
         },
         {
@@ -451,13 +442,13 @@
             "pos": "WR"
         },
         {
-            "name": "DeMarco Murray (1)",
-            "tm": "TEN",
-            "bw": 13,
-            "adp": 6.7,
-            "val": 2.3,
-            "ps": 0.21,
-            "pos": "RB"
+            "name": "Jordan Matthews (1)",
+            "tm": "PHI",
+            "bw": 4,
+            "adp": 6.9,
+            "val": 2.4,
+            "ps": 0.13,
+            "pos": "WR"
         },
         {
             "name": "Travis Kelce (1)",
@@ -467,6 +458,15 @@
             "val": 2.3,
             "ps": 0.41,
             "pos": "TE"
+        },
+        {
+            "name": "DeMarco Murray (1)",
+            "tm": "TEN",
+            "bw": 13,
+            "adp": 6.7,
+            "val": 2.3,
+            "ps": 0.21,
+            "pos": "RB"
         },
         {
             "name": "Michael Floyd (1)",
@@ -487,13 +487,13 @@
             "pos": "TE"
         },
         {
-            "name": "Emmanuel Sanders (2)",
-            "tm": "DEN",
-            "bw": 11,
-            "adp": 7.7,
+            "name": "Coby Fleener (1)",
+            "tm": "NO",
+            "bw": 5,
+            "adp": 8.2,
             "val": 2,
-            "ps": 0.08,
-            "pos": "WR"
+            "ps": 0.24,
+            "pos": "TE"
         },
         {
             "name": "Donte Moncrief (2)",
@@ -505,13 +505,13 @@
             "pos": "WR"
         },
         {
-            "name": "Coby Fleener (1)",
-            "tm": "NO",
-            "bw": 5,
-            "adp": 8.2,
+            "name": "Emmanuel Sanders (2)",
+            "tm": "DEN",
+            "bw": 11,
+            "adp": 7.7,
             "val": 2,
-            "ps": 0.24,
-            "pos": "TE"
+            "ps": 0.08,
+            "pos": "WR"
         },
         {
             "name": "Andrew Luck",
@@ -523,21 +523,21 @@
             "pos": "QB"
         },
         {
-            "name": "Matt Jones (1)",
-            "tm": "WAS",
-            "bw": 9,
-            "adp": 7.4,
-            "val": 1.9,
-            "ps": 0.15,
-            "pos": "RB"
-        },
-        {
             "name": "Giovani Bernard (2)",
             "tm": "CIN",
             "bw": 9,
             "adp": 7.5,
             "val": 1.9,
             "ps": 0.17,
+            "pos": "RB"
+        },
+        {
+            "name": "Matt Jones (1)",
+            "tm": "WAS",
+            "bw": 9,
+            "adp": 7.4,
+            "val": 1.9,
+            "ps": 0.15,
             "pos": "RB"
         },
         {
@@ -550,12 +550,21 @@
             "pos": "RB"
         },
         {
-            "name": "Dion Lewis (1)",
-            "tm": "NE",
+            "name": "Jeremy Hill (1)",
+            "tm": "CIN",
             "bw": 9,
-            "adp": 5.9,
-            "val": 1.8,
-            "ps": 0.14,
+            "adp": 7.1,
+            "val": 1.7,
+            "ps": 0.09,
+            "pos": "RB"
+        },
+        {
+            "name": "Duke Johnson (2)",
+            "tm": "CLE",
+            "bw": 13,
+            "adp": 7.5,
+            "val": 1.7,
+            "ps": 0.1,
             "pos": "RB"
         },
         {
@@ -586,30 +595,21 @@
             "pos": "RB"
         },
         {
-            "name": "Jeremy Hill (1)",
-            "tm": "CIN",
-            "bw": 9,
-            "adp": 7.1,
-            "val": 1.7,
-            "ps": 0.09,
-            "pos": "RB"
-        },
-        {
-            "name": "Duke Johnson (2)",
-            "tm": "CLE",
-            "bw": 13,
-            "adp": 7.5,
-            "val": 1.7,
-            "ps": 0.1,
-            "pos": "RB"
-        },
-        {
             "name": "John Brown (3)",
             "tm": "ARI",
             "bw": 9,
             "adp": 7.6,
             "val": 1.6,
             "ps": 0.07,
+            "pos": "WR"
+        },
+        {
+            "name": "DeSean Jackson (2)",
+            "tm": "WAS",
+            "bw": 9,
+            "adp": 9.3,
+            "val": 1.5,
+            "ps": 0.06,
             "pos": "WR"
         },
         {
@@ -622,6 +622,15 @@
             "pos": "WR"
         },
         {
+            "name": "Michael Crabtree (2)",
+            "tm": "OAK",
+            "bw": 10,
+            "adp": 8.7,
+            "val": 1.5,
+            "ps": 0.04,
+            "pos": "WR"
+        },
+        {
             "name": "Gary Barnidge (1)",
             "tm": "CLE",
             "bw": 13,
@@ -629,15 +638,6 @@
             "val": 1.5,
             "ps": 0.18,
             "pos": "TE"
-        },
-        {
-            "name": "DeSean Jackson (2)",
-            "tm": "WAS",
-            "bw": 9,
-            "adp": 9.3,
-            "val": 1.5,
-            "ps": 0.06,
-            "pos": "WR"
         },
         {
             "name": "Frank Gore (1)",
@@ -649,30 +649,12 @@
             "pos": "RB"
         },
         {
-            "name": "Michael Crabtree (2)",
-            "tm": "OAK",
-            "bw": 10,
-            "adp": 8.7,
-            "val": 1.5,
-            "ps": 0.04,
-            "pos": "WR"
-        },
-        {
             "name": "Danny Woodhead (2)",
             "tm": "SD",
             "bw": 11,
             "adp": 7.8,
             "val": 1.4,
             "ps": 0.04,
-            "pos": "RB"
-        },
-        {
-            "name": "Melvin Gordon (1)",
-            "tm": "SD",
-            "bw": 11,
-            "adp": 8.7,
-            "val": 1.3,
-            "ps": 0.03,
             "pos": "RB"
         },
         {
@@ -685,13 +667,13 @@
             "pos": "WR"
         },
         {
-            "name": "Seattle Seahawks",
-            "tm": "SEA",
-            "bw": 5,
-            "adp": null,
+            "name": "Melvin Gordon (1)",
+            "tm": "SD",
+            "bw": 11,
+            "adp": 8.7,
             "val": 1.3,
-            "ps": 0.34,
-            "pos": "DST"
+            "ps": 0.03,
+            "pos": "RB"
         },
         {
             "name": "Zach Ertz (1)",
@@ -703,33 +685,6 @@
             "pos": "TE"
         },
         {
-            "name": "Denver Broncos",
-            "tm": "DEN",
-            "bw": 11,
-            "adp": null,
-            "val": 1.2,
-            "ps": 0.3,
-            "pos": "DST"
-        },
-        {
-            "name": "Arizona Cardinals",
-            "tm": "ARI",
-            "bw": 9,
-            "adp": null,
-            "val": 1.1,
-            "ps": 0.26,
-            "pos": "DST"
-        },
-        {
-            "name": "Torrey Smith (1)",
-            "tm": "SF",
-            "bw": 8,
-            "adp": 11.3,
-            "val": 1,
-            "ps": 0.03,
-            "pos": "WR"
-        },
-        {
             "name": "Arian Foster (2)",
             "tm": "MIA",
             "bw": 8,
@@ -739,21 +694,21 @@
             "pos": "RB"
         },
         {
-            "name": "Carolina Panthers",
-            "tm": "CAR",
-            "bw": 7,
-            "adp": null,
-            "val": 1,
-            "ps": 0.25,
-            "pos": "DST"
-        },
-        {
             "name": "Tyler Lockett (2)",
             "tm": "SEA",
             "bw": 5,
             "adp": 8.9,
             "val": 1,
             "ps": 0.02,
+            "pos": "WR"
+        },
+        {
+            "name": "Torrey Smith (1)",
+            "tm": "SF",
+            "bw": 8,
+            "adp": 11.3,
+            "val": 1,
+            "ps": 0.03,
             "pos": "WR"
         },
         {
@@ -775,15 +730,6 @@
             "pos": "RB"
         },
         {
-            "name": "Houston Texans",
-            "tm": "HOU",
-            "bw": 9,
-            "adp": null,
-            "val": 0.9,
-            "ps": 0.13,
-            "pos": "DST"
-        },
-        {
             "name": "Tyler Eifert (1)",
             "tm": "CIN",
             "bw": 9,
@@ -802,15 +748,6 @@
             "pos": "RB"
         },
         {
-            "name": "Jason Witten (1)",
-            "tm": "DAL",
-            "bw": 7,
-            "adp": 14.1,
-            "val": 0.8,
-            "ps": 0.03,
-            "pos": "TE"
-        },
-        {
             "name": "Marvin Jones (2)",
             "tm": "DET",
             "bw": 10,
@@ -820,12 +757,39 @@
             "pos": "WR"
         },
         {
+            "name": "Jason Witten (1)",
+            "tm": "DAL",
+            "bw": 7,
+            "adp": 14.1,
+            "val": 0.8,
+            "ps": 0.03,
+            "pos": "TE"
+        },
+        {
+            "name": "Seattle Seahawks",
+            "tm": "SEA",
+            "bw": 5,
+            "adp": null,
+            "val": 0.7,
+            "ps": 0.34,
+            "pos": "DST"
+        },
+        {
             "name": "Ben Roethlisberger",
             "tm": "PIT",
             "bw": 8,
             "adp": 7.7,
             "val": 0.7,
             "ps": 0.09,
+            "pos": "QB"
+        },
+        {
+            "name": "Blake Bortles",
+            "tm": "JAX",
+            "bw": 5,
+            "adp": 10.3,
+            "val": 0.6,
+            "ps": 0.06,
             "pos": "QB"
         },
         {
@@ -838,13 +802,13 @@
             "pos": "WR"
         },
         {
-            "name": "Blake Bortles",
-            "tm": "JAX",
-            "bw": 5,
-            "adp": 10.3,
-            "val": 0.6,
-            "ps": 0.06,
-            "pos": "QB"
+            "name": "Denver Broncos",
+            "tm": "DEN",
+            "bw": 11,
+            "adp": null,
+            "val": 0.5,
+            "ps": 0.3,
+            "pos": "DST"
         },
         {
             "name": "Stefon Diggs (1)",
@@ -856,24 +820,6 @@
             "pos": "WR"
         },
         {
-            "name": "Minnesota Vikings",
-            "tm": "MIN",
-            "bw": 6,
-            "adp": null,
-            "val": 0.5,
-            "ps": 0.11,
-            "pos": "DST"
-        },
-        {
-            "name": "Eli Manning",
-            "tm": "NYG",
-            "bw": 8,
-            "adp": 9.5,
-            "val": 0.4,
-            "ps": 0.03,
-            "pos": "QB"
-        },
-        {
             "name": "Julius Thomas (1)",
             "tm": "JAX",
             "bw": 5,
@@ -881,24 +827,6 @@
             "val": 0.4,
             "ps": 0.01,
             "pos": "TE"
-        },
-        {
-            "name": "Carson Palmer",
-            "tm": "ARI",
-            "bw": 9,
-            "adp": 8.4,
-            "val": 0.4,
-            "ps": 0.01,
-            "pos": "QB"
-        },
-        {
-            "name": "Kansas City Chiefs",
-            "tm": "KC",
-            "bw": 5,
-            "adp": null,
-            "val": 0.4,
-            "ps": 0,
-            "pos": "DST"
         },
         {
             "name": "Kevin White (2)",
@@ -910,6 +838,15 @@
             "pos": "WR"
         },
         {
+            "name": "Arizona Cardinals",
+            "tm": "ARI",
+            "bw": 9,
+            "adp": null,
+            "val": 0.4,
+            "ps": 0.26,
+            "pos": "DST"
+        },
+        {
             "name": "Stephen Gostkowski",
             "tm": "NE",
             "bw": 9,
@@ -919,6 +856,24 @@
             "pos": "K"
         },
         {
+            "name": "Carson Palmer",
+            "tm": "ARI",
+            "bw": 9,
+            "adp": 8.4,
+            "val": 0.4,
+            "ps": 0.01,
+            "pos": "QB"
+        },
+        {
+            "name": "Eli Manning",
+            "tm": "NYG",
+            "bw": 8,
+            "adp": 9.5,
+            "val": 0.4,
+            "ps": 0.03,
+            "pos": "QB"
+        },
+        {
             "name": "Sterling Shepard (3)",
             "tm": "NYG",
             "bw": 8,
@@ -926,15 +881,6 @@
             "val": 0.3,
             "ps": 0,
             "pos": "WR"
-        },
-        {
-            "name": "Steven Hauschka",
-            "tm": "SEA",
-            "bw": 5,
-            "adp": null,
-            "val": 0.3,
-            "ps": 0.2,
-            "pos": "K"
         },
         {
             "name": "TJ Yeldon (1)",
@@ -955,6 +901,24 @@
             "pos": "TE"
         },
         {
+            "name": "Steven Hauschka",
+            "tm": "SEA",
+            "bw": 5,
+            "adp": null,
+            "val": 0.3,
+            "ps": 0.2,
+            "pos": "K"
+        },
+        {
+            "name": "Carolina Panthers",
+            "tm": "CAR",
+            "bw": 7,
+            "adp": null,
+            "val": 0.2,
+            "ps": 0.25,
+            "pos": "DST"
+        },
+        {
             "name": "Justin Tucker",
             "tm": "BAL",
             "bw": 8,
@@ -962,15 +926,6 @@
             "val": 0.2,
             "ps": 0.15,
             "pos": "K"
-        },
-        {
-            "name": "Los Angeles Rams",
-            "tm": "LA",
-            "bw": 8,
-            "adp": null,
-            "val": 0.1,
-            "ps": 0,
-            "pos": "DST"
         },
         {
             "name": "Philip Rivers",
@@ -982,13 +937,13 @@
             "pos": "QB"
         },
         {
-            "name": "New England Patriots",
-            "tm": "NE",
-            "bw": 9,
+            "name": "Brandon McManus",
+            "tm": "DEN",
+            "bw": 11,
             "adp": null,
-            "val": 0.1,
+            "val": 0,
             "ps": 0,
-            "pos": "DST"
+            "pos": "K"
         },
         {
             "name": "Dan Bailey",
@@ -1009,51 +964,6 @@
             "pos": "K"
         },
         {
-            "name": "Green Bay Packers",
-            "tm": "GB",
-            "bw": 4,
-            "adp": null,
-            "val": 0,
-            "ps": 0,
-            "pos": "DST"
-        },
-        {
-            "name": "Charles Sims (2)",
-            "tm": "TB",
-            "bw": 6,
-            "adp": 10.7,
-            "val": 0,
-            "ps": 0,
-            "pos": "RB"
-        },
-        {
-            "name": "Mason Crosby",
-            "tm": "GB",
-            "bw": 4,
-            "adp": null,
-            "val": 0,
-            "ps": 0.1,
-            "pos": "K"
-        },
-        {
-            "name": "New York Jets",
-            "tm": "NYJ",
-            "bw": 11,
-            "adp": null,
-            "val": 0,
-            "ps": 0,
-            "pos": "DST"
-        },
-        {
-            "name": "Cincinnati Bengals",
-            "tm": "CIN",
-            "bw": 9,
-            "adp": null,
-            "val": 0,
-            "ps": 0,
-            "pos": "DST"
-        },
-        {
             "name": "Adam Vinatieri",
             "tm": "IND",
             "bw": 10,
@@ -1072,12 +982,12 @@
             "pos": "K"
         },
         {
-            "name": "Brandon McManus",
-            "tm": "DEN",
-            "bw": 11,
+            "name": "Mason Crosby",
+            "tm": "GB",
+            "bw": 4,
             "adp": null,
             "val": 0,
-            "ps": 0,
+            "ps": 0.1,
             "pos": "K"
         },
         {
@@ -1090,10 +1000,28 @@
             "pos": "K"
         },
         {
-            "name": "Vincent Jackson (2)",
+            "name": "Houston Texans",
+            "tm": "HOU",
+            "bw": 9,
+            "adp": null,
+            "val": 0,
+            "ps": 0.13,
+            "pos": "DST"
+        },
+        {
+            "name": "Charles Sims (2)",
             "tm": "TB",
             "bw": 6,
-            "adp": 12.4,
+            "adp": 10.7,
+            "val": 0,
+            "ps": 0,
+            "pos": "RB"
+        },
+        {
+            "name": "Corey Coleman (1)",
+            "tm": "CLE",
+            "bw": 13,
+            "adp": 10.8,
             "val": -0.1,
             "ps": 0,
             "pos": "WR"
@@ -1126,58 +1054,13 @@
             "pos": "RB"
         },
         {
-            "name": "Corey Coleman (1)",
-            "tm": "CLE",
-            "bw": 13,
-            "adp": 10.8,
+            "name": "Vincent Jackson (2)",
+            "tm": "TB",
+            "bw": 6,
+            "adp": 12.4,
             "val": -0.1,
             "ps": 0,
             "pos": "WR"
-        },
-        {
-            "name": "Josh Brown",
-            "tm": "NYG",
-            "bw": 8,
-            "adp": null,
-            "val": -0.2,
-            "ps": 0,
-            "pos": "K"
-        },
-        {
-            "name": "Jameis Winston",
-            "tm": "TB",
-            "bw": 6,
-            "adp": 13.2,
-            "val": -0.2,
-            "ps": 0,
-            "pos": "QB"
-        },
-        {
-            "name": "Tyrod Taylor",
-            "tm": "BUF",
-            "bw": 10,
-            "adp": 12.5,
-            "val": -0.2,
-            "ps": 0,
-            "pos": "QB"
-        },
-        {
-            "name": "Buffalo Bills",
-            "tm": "BUF",
-            "bw": 10,
-            "adp": null,
-            "val": -0.2,
-            "ps": 0,
-            "pos": "DST"
-        },
-        {
-            "name": "Pittsburgh Steelers",
-            "tm": "PIT",
-            "bw": 8,
-            "adp": null,
-            "val": -0.2,
-            "ps": 0,
-            "pos": "DST"
         },
         {
             "name": "Zach Miller (1)",
@@ -1189,13 +1072,31 @@
             "pos": "TE"
         },
         {
-            "name": "Tavon Austin (1)",
-            "tm": "LA",
-            "bw": 8,
-            "adp": 11.1,
-            "val": -0.3,
+            "name": "Jameis Winston",
+            "tm": "TB",
+            "bw": 6,
+            "adp": 13.2,
+            "val": -0.2,
             "ps": 0,
-            "pos": "WR"
+            "pos": "QB"
+        },
+        {
+            "name": "Josh Brown",
+            "tm": "NYG",
+            "bw": 8,
+            "adp": null,
+            "val": -0.2,
+            "ps": 0,
+            "pos": "K"
+        },
+        {
+            "name": "Tyrod Taylor",
+            "tm": "BUF",
+            "bw": 10,
+            "adp": 12.5,
+            "val": -0.2,
+            "ps": 0,
+            "pos": "QB"
         },
         {
             "name": "Chris Boswell",
@@ -1207,6 +1108,15 @@
             "pos": "K"
         },
         {
+            "name": "Tavon Austin (1)",
+            "tm": "LA",
+            "bw": 8,
+            "adp": 11.1,
+            "val": -0.3,
+            "ps": 0,
+            "pos": "WR"
+        },
+        {
             "name": "Matthew Stafford",
             "tm": "DET",
             "bw": 10,
@@ -1214,6 +1124,24 @@
             "val": -0.3,
             "ps": 0,
             "pos": "QB"
+        },
+        {
+            "name": "Markus Wheaton (2)",
+            "tm": "PIT",
+            "bw": 8,
+            "adp": 13.1,
+            "val": -0.4,
+            "ps": 0,
+            "pos": "WR"
+        },
+        {
+            "name": "Los Angeles Rams",
+            "tm": "LA",
+            "bw": 8,
+            "adp": null,
+            "val": -0.4,
+            "ps": 0,
+            "pos": "DST"
         },
         {
             "name": "Travis Benjamin (2)",
@@ -1225,24 +1153,6 @@
             "pos": "WR"
         },
         {
-            "name": "Josh Gordon (2)",
-            "tm": "CLE",
-            "bw": 13,
-            "adp": 10.7,
-            "val": -0.4,
-            "ps": 0,
-            "pos": "WR"
-        },
-        {
-            "name": "Matt Prater",
-            "tm": "DET",
-            "bw": 10,
-            "adp": null,
-            "val": -0.4,
-            "ps": 0,
-            "pos": "K"
-        },
-        {
             "name": "Isaiah Crowell (1)",
             "tm": "CLE",
             "bw": 13,
@@ -1250,24 +1160,6 @@
             "val": -0.4,
             "ps": 0,
             "pos": "RB"
-        },
-        {
-            "name": "Dan Carpenter",
-            "tm": "BUF",
-            "bw": 10,
-            "adp": null,
-            "val": -0.4,
-            "ps": 0,
-            "pos": "K"
-        },
-        {
-            "name": "Martellus Bennett (2)",
-            "tm": "NE",
-            "bw": 9,
-            "adp": 13.7,
-            "val": -0.4,
-            "ps": 0,
-            "pos": "TE"
         },
         {
             "name": "Andy Dalton",
@@ -1279,10 +1171,46 @@
             "pos": "QB"
         },
         {
-            "name": "Markus Wheaton (2)",
-            "tm": "PIT",
-            "bw": 8,
-            "adp": 13.1,
+            "name": "Matt Prater",
+            "tm": "DET",
+            "bw": 10,
+            "adp": null,
+            "val": -0.4,
+            "ps": 0,
+            "pos": "K"
+        },
+        {
+            "name": "Dan Carpenter",
+            "tm": "BUF",
+            "bw": 10,
+            "adp": null,
+            "val": -0.4,
+            "ps": 0,
+            "pos": "K"
+        },
+        {
+            "name": "New England Patriots",
+            "tm": "NE",
+            "bw": 9,
+            "adp": null,
+            "val": -0.4,
+            "ps": 0,
+            "pos": "DST"
+        },
+        {
+            "name": "Kansas City Chiefs",
+            "tm": "KC",
+            "bw": 5,
+            "adp": null,
+            "val": -0.4,
+            "ps": 0,
+            "pos": "DST"
+        },
+        {
+            "name": "Josh Gordon (2)",
+            "tm": "CLE",
+            "bw": 13,
+            "adp": 10.7,
             "val": -0.4,
             "ps": 0,
             "pos": "WR"
@@ -1297,12 +1225,21 @@
             "pos": "RB"
         },
         {
-            "name": "Oakland Raiders",
-            "tm": "OAK",
-            "bw": 10,
+            "name": "Martellus Bennett (2)",
+            "tm": "NE",
+            "bw": 9,
+            "adp": 13.7,
+            "val": -0.4,
+            "ps": 0,
+            "pos": "TE"
+        },
+        {
+            "name": "Minnesota Vikings",
+            "tm": "MIN",
+            "bw": 6,
             "adp": null,
             "val": -0.5,
-            "ps": 0,
+            "ps": 0.11,
             "pos": "DST"
         },
         {
@@ -1324,13 +1261,13 @@
             "pos": "QB"
         },
         {
-            "name": "Chris Ivory (2)",
-            "tm": "JAX",
-            "bw": 5,
-            "adp": 10.2,
+            "name": "Green Bay Packers",
+            "tm": "GB",
+            "bw": 4,
+            "adp": null,
             "val": -0.6,
             "ps": 0,
-            "pos": "RB"
+            "pos": "DST"
         },
         {
             "name": "Theo Riddick (2)",
@@ -1351,13 +1288,22 @@
             "pos": "QB"
         },
         {
-            "name": "Ladarius Green (1)",
-            "tm": "PIT",
-            "bw": 8,
-            "adp": 13.9,
-            "val": -0.7,
+            "name": "Chris Ivory (2)",
+            "tm": "JAX",
+            "bw": 5,
+            "adp": 10.2,
+            "val": -0.6,
             "ps": 0,
-            "pos": "TE"
+            "pos": "RB"
+        },
+        {
+            "name": "Cincinnati Bengals",
+            "tm": "CIN",
+            "bw": 9,
+            "adp": null,
+            "val": -0.6,
+            "ps": 0,
+            "pos": "DST"
         },
         {
             "name": "Charles Clay (1)",
@@ -1369,13 +1315,22 @@
             "pos": "TE"
         },
         {
-            "name": "Matt Ryan",
-            "tm": "ATL",
+            "name": "New York Jets",
+            "tm": "NYJ",
             "bw": 11,
-            "adp": 14.4,
-            "val": -0.8,
+            "adp": null,
+            "val": -0.7,
             "ps": 0,
-            "pos": "QB"
+            "pos": "DST"
+        },
+        {
+            "name": "Ladarius Green (1)",
+            "tm": "PIT",
+            "bw": 8,
+            "adp": 13.9,
+            "val": -0.7,
+            "ps": 0,
+            "pos": "TE"
         },
         {
             "name": "Ryan Tannehill",
@@ -1387,6 +1342,24 @@
             "pos": "QB"
         },
         {
+            "name": "Matt Ryan",
+            "tm": "ATL",
+            "bw": 11,
+            "adp": 14.4,
+            "val": -0.8,
+            "ps": 0,
+            "pos": "QB"
+        },
+        {
+            "name": "Buffalo Bills",
+            "tm": "BUF",
+            "bw": 10,
+            "adp": null,
+            "val": -0.8,
+            "ps": 0,
+            "pos": "DST"
+        },
+        {
             "name": "Ryan Fitzpatrick",
             "tm": "NYJ",
             "bw": 11,
@@ -1394,6 +1367,15 @@
             "val": -0.9,
             "ps": 0,
             "pos": "QB"
+        },
+        {
+            "name": "Kamar Aiken (2)",
+            "tm": "BAL",
+            "bw": 8,
+            "adp": 12.9,
+            "val": -0.9,
+            "ps": 0,
+            "pos": "WR"
         },
         {
             "name": "Tony Romo",
@@ -1414,24 +1396,6 @@
             "pos": "TE"
         },
         {
-            "name": "Kamar Aiken (2)",
-            "tm": "BAL",
-            "bw": 8,
-            "adp": 12.9,
-            "val": -0.9,
-            "ps": 0,
-            "pos": "WR"
-        },
-        {
-            "name": "Terrance Williams (2)",
-            "tm": "DAL",
-            "bw": 7,
-            "adp": 16.9,
-            "val": -1,
-            "ps": 0,
-            "pos": "WR"
-        },
-        {
             "name": "Laquon Treadwell (2)",
             "tm": "MIN",
             "bw": 6,
@@ -1445,6 +1409,15 @@
             "tm": "ATL",
             "bw": 11,
             "adp": 14.8,
+            "val": -1,
+            "ps": 0,
+            "pos": "WR"
+        },
+        {
+            "name": "Terrance Williams (2)",
+            "tm": "DAL",
+            "bw": 7,
+            "adp": 16.9,
             "val": -1,
             "ps": 0,
             "pos": "WR"
@@ -1484,6 +1457,15 @@
             "val": -1.2,
             "ps": 0,
             "pos": "RB"
+        },
+        {
+            "name": "Pittsburgh Steelers",
+            "tm": "PIT",
+            "bw": 8,
+            "adp": null,
+            "val": -1.2,
+            "ps": 0,
+            "pos": "DST"
         },
         {
             "name": "Kyle Rudolph (1)",
@@ -1549,13 +1531,13 @@
             "pos": "RB"
         },
         {
-            "name": "Will Tye (2)",
-            "tm": "NYG",
-            "bw": 8,
-            "adp": 18.1,
+            "name": "Oakland Raiders",
+            "tm": "OAK",
+            "bw": 10,
+            "adp": null,
             "val": -1.5,
             "ps": 0,
-            "pos": "TE"
+            "pos": "DST"
         },
         {
             "name": "Devin Funchess (3)",
@@ -1585,13 +1567,13 @@
             "pos": "TE"
         },
         {
-            "name": "Jay Ajayi (1)",
-            "tm": "MIA",
+            "name": "Will Tye (2)",
+            "tm": "NYG",
             "bw": 8,
-            "adp": 11.2,
-            "val": -1.7,
+            "adp": 18.1,
+            "val": -1.5,
             "ps": 0,
-            "pos": "RB"
+            "pos": "TE"
         },
         {
             "name": "Jay Cutler",
@@ -1612,6 +1594,15 @@
             "pos": "WR"
         },
         {
+            "name": "Jay Ajayi (1)",
+            "tm": "MIA",
+            "bw": 8,
+            "adp": 11.2,
+            "val": -1.7,
+            "ps": 0,
+            "pos": "RB"
+        },
+        {
             "name": "Kenny Britt (2)",
             "tm": "LA",
             "bw": 8,
@@ -1630,13 +1621,22 @@
             "pos": "QB"
         },
         {
-            "name": "Vance McDonald (1)",
-            "tm": "SF",
-            "bw": 8,
-            "adp": 18.5,
+            "name": "Dion Lewis (1)",
+            "tm": "NE",
+            "bw": 9,
+            "adp": null,
+            "val": -1.8,
+            "ps": 0.14,
+            "pos": "RB"
+        },
+        {
+            "name": "Michael Thomas (3)",
+            "tm": "NO",
+            "bw": 5,
+            "adp": 14.3,
             "val": -1.9,
             "ps": 0,
-            "pos": "TE"
+            "pos": "WR"
         },
         {
             "name": "Austin Seferian-Jenkins (2)",
@@ -1648,13 +1648,13 @@
             "pos": "TE"
         },
         {
-            "name": "Michael Thomas (3)",
-            "tm": "NO",
-            "bw": 5,
-            "adp": 14.3,
+            "name": "Vance McDonald (1)",
+            "tm": "SF",
+            "bw": 8,
+            "adp": 18.5,
             "val": -1.9,
             "ps": 0,
-            "pos": "WR"
+            "pos": "TE"
         },
         {
             "name": "Derrick Henry (2)",
@@ -1693,10 +1693,28 @@
             "pos": "RB"
         },
         {
+            "name": "Teddy Bridgewater",
+            "tm": "MIN",
+            "bw": 6,
+            "adp": 20.6,
+            "val": -3.1,
+            "ps": 0,
+            "pos": "QB"
+        },
+        {
             "name": "Jerick McKinnon (2)",
             "tm": "MIN",
             "bw": 6,
             "adp": 15.7,
+            "val": -3.1,
+            "ps": 0,
+            "pos": "RB"
+        },
+        {
+            "name": "CJ Prosise (3)",
+            "tm": "SEA",
+            "bw": 5,
+            "adp": 14.7,
             "val": -3.1,
             "ps": 0,
             "pos": "RB"
@@ -1720,29 +1738,20 @@
             "pos": "RB"
         },
         {
-            "name": "Teddy Bridgewater",
-            "tm": "MIN",
-            "bw": 6,
-            "adp": 20.6,
-            "val": -3.1,
-            "ps": 0,
-            "pos": "QB"
-        },
-        {
-            "name": "CJ Prosise (3)",
-            "tm": "SEA",
-            "bw": 5,
-            "adp": 14.7,
-            "val": -3.1,
-            "ps": 0,
-            "pos": "RB"
-        },
-        {
             "name": "Jordan Howard (3)",
             "tm": "CHI",
             "bw": 9,
             "adp": 15.5,
             "val": -3.4,
+            "ps": 0,
+            "pos": "RB"
+        },
+        {
+            "name": "DeAndre Washington (2)",
+            "tm": "OAK",
+            "bw": 10,
+            "adp": 15.5,
+            "val": -3.5,
             "ps": 0,
             "pos": "RB"
         },
@@ -1754,15 +1763,6 @@
             "val": -3.5,
             "ps": 0,
             "pos": "QB"
-        },
-        {
-            "name": "DeAndre Washington (2)",
-            "tm": "OAK",
-            "bw": 10,
-            "adp": 15.5,
-            "val": -3.5,
-            "ps": 0,
-            "pos": "RB"
         },
         {
             "name": "Darren McFadden (2)",
@@ -1869,7 +1869,7 @@
       "config":{
         "teams":{
           "number":10,
-          "teamNames":["Jeff","Justin","Ryan","Norm","Steve L","Conner","Bryant","Steve S","Harrison","Colin"],
+          "teamNames":["Jeff","Steve L","Colin","Norm","Steve S","Conner","Bryant","Justin","Harrison","Ryan"],
           "teams":[]
         },
         "rounds":{
@@ -1887,16 +1887,26 @@
             "round_num":9,
             "player":"David Johnson"
           },
+            {
+                "team_num":1,
+                "round_num":2,
+                "player":"Devonta Freeman"
+            },
           {
-            "team_num":2,
+            "team_num":8,
             "round_num":3,
             "player":"Julio Jones"
           },
           {
-            "team_num":2,
+            "team_num":8,
             "round_num":6,
             "player":"Allen Robinson"
           },
+            {
+                "team_num":8,
+                "round_num":2,
+                "player":"Demaryius Thomas"
+            },
           {
             "team_num":4,
             "round_num":6,
@@ -1913,22 +1923,27 @@
             "player":"Marcus Mariota"
           },
           {
-            "team_num":3,
+            "team_num":10,
             "round_num":9,
             "player":"Odell Beckham"
           },
           {
-            "team_num":3,
+            "team_num":10,
             "round_num":16,
             "player":"Kelvin Benjamin"
           },
+            {
+                "team_num":10,
+                "round_num":6,
+                "player":"Doug Martin"
+            },
           {
-            "team_num":5,
+            "team_num":2,
             "round_num":3,
             "player":"DeAndre Hopkins"
           },
             {
-                "team_num":5,
+                "team_num":2,
                 "round_num":9,
                 "player":"Andrew Luck"
             },
@@ -1958,14 +1973,14 @@
                 "player":"Jordy Nelson"
           },
           {
-            "team_num":8,
-            "round_num":2,
+            "team_num":5,
+            "round_num":1,
             "player":"Antonio Brown"
           },
           {
-            "team_num":8,
-            "round_num":9,
-            "player":"Dion Lewis"
+            "team_num":5,
+            "round_num":7,
+            "player":"Greg Olsen"
           },
           {
             "team_num":9,
@@ -1978,12 +1993,17 @@
             "player":"Josh Gordon"
           },
           {
-            "team_num":10,
+            "team_num":3,
             "round_num":9,
             "player":"Donte Moncrief"
           },
+            {
+                "team_num":3,
+                "round_num":2,
+                "player":"Lamar Miller"
+            },
           {
-            "team_num":10,
+            "team_num":3,
             "round_num":14,
             "player":"Mark Ingram"
           }
