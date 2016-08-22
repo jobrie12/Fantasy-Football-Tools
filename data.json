@@ -691,7 +691,7 @@
             "adp": null,
             "val": 1.3,
             "ps": 0.34,
-            "pos": "DEF"
+            "pos": "DST"
         },
         {
             "name": "Zach Ertz (1)",
@@ -709,7 +709,7 @@
             "adp": null,
             "val": 1.2,
             "ps": 0.3,
-            "pos": "DEF"
+            "pos": "DST"
         },
         {
             "name": "Arizona Cardinals",
@@ -718,7 +718,7 @@
             "adp": null,
             "val": 1.1,
             "ps": 0.26,
-            "pos": "DEF"
+            "pos": "DST"
         },
         {
             "name": "Torrey Smith (1)",
@@ -745,7 +745,7 @@
             "adp": null,
             "val": 1,
             "ps": 0.25,
-            "pos": "DEF"
+            "pos": "DST"
         },
         {
             "name": "Tyler Lockett (2)",
@@ -781,7 +781,7 @@
             "adp": null,
             "val": 0.9,
             "ps": 0.13,
-            "pos": "DEF"
+            "pos": "DST"
         },
         {
             "name": "Tyler Eifert (1)",
@@ -862,7 +862,7 @@
             "adp": null,
             "val": 0.5,
             "ps": 0.11,
-            "pos": "DEF"
+            "pos": "DST"
         },
         {
             "name": "Eli Manning",
@@ -898,7 +898,7 @@
             "adp": null,
             "val": 0.4,
             "ps": 0,
-            "pos": "DEF"
+            "pos": "DST"
         },
         {
             "name": "Kevin White (2)",
@@ -970,7 +970,7 @@
             "adp": null,
             "val": 0.1,
             "ps": 0,
-            "pos": "DEF"
+            "pos": "DST"
         },
         {
             "name": "Philip Rivers",
@@ -988,7 +988,7 @@
             "adp": null,
             "val": 0.1,
             "ps": 0,
-            "pos": "DEF"
+            "pos": "DST"
         },
         {
             "name": "Dan Bailey",
@@ -1015,7 +1015,7 @@
             "adp": null,
             "val": 0,
             "ps": 0,
-            "pos": "DEF"
+            "pos": "DST"
         },
         {
             "name": "Charles Sims (2)",
@@ -1042,7 +1042,7 @@
             "adp": null,
             "val": 0,
             "ps": 0,
-            "pos": "DEF"
+            "pos": "DST"
         },
         {
             "name": "Cincinnati Bengals",
@@ -1051,7 +1051,7 @@
             "adp": null,
             "val": 0,
             "ps": 0,
-            "pos": "DEF"
+            "pos": "DST"
         },
         {
             "name": "Adam Vinatieri",
@@ -1168,7 +1168,7 @@
             "adp": null,
             "val": -0.2,
             "ps": 0,
-            "pos": "DEF"
+            "pos": "DST"
         },
         {
             "name": "Pittsburgh Steelers",
@@ -1177,7 +1177,7 @@
             "adp": null,
             "val": -0.2,
             "ps": 0,
-            "pos": "DEF"
+            "pos": "DST"
         },
         {
             "name": "Zach Miller (1)",
@@ -1303,7 +1303,7 @@
             "adp": null,
             "val": -0.5,
             "ps": 0,
-            "pos": "DEF"
+            "pos": "DST"
         },
         {
             "name": "Derek Carr",
@@ -1917,16 +1917,21 @@
             "round_num":9,
             "player":"Odell Beckham"
           },
-        {
+          {
             "team_num":3,
             "round_num":16,
             "player":"Kelvin Benjamin"
-        },
+          },
           {
             "team_num":5,
             "round_num":3,
-            "player":"Deandre Hopkins"
+            "player":"DeAndre Hopkins"
           },
+            {
+                "team_num":5,
+                "round_num":9,
+                "player":"Andrew Luck"
+            },
           {
             "team_num":6,
             "round_num":4,
@@ -1947,14 +1952,14 @@
             "round_num":9,
             "player":"Thomas Rawls"
           },
-            {
+          {
                 "team_num":7,
                 "round_num":12,
                 "player":"Jordy Nelson"
-            },
+          },
           {
             "team_num":8,
-            "round_num":1,
+            "round_num":2,
             "player":"Antonio Brown"
           },
           {

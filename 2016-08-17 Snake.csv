@@ -1,0 +1,208 @@
+name,tm,bw,adp,val,ps,pos
+Cam Newton,CAR,7,4.5,4.1,0.75,QB
+Aaron Rodgers,GB,4,4.9,3.5,0.54,QB
+Russell Wilson,SEA,5,5.8,3.0,0.36,QB
+Andrew Luck,IND,10,6.2,2.0,0.24,QB
+Drew Brees,NO,5,6.7,1.7,0.14,QB
+Ben Roethlisberger,PIT,8,7.7,0.7,0.09,QB
+Blake Bortles,JAX,5,10.3,0.6,0.06,QB
+Eli Manning,NYG,8,9.5,0.4,0.03,QB
+Carson Palmer,ARI,9,8.4,0.4,0.01,QB
+Philip Rivers,SD,11,10.1,0.1,0.00,QB
+Tyrod Taylor,BUF,10,12.5,-0.2,0.00,QB
+Jameis Winston,TB,6,13.2,-0.2,0.00,QB
+Matthew Stafford,DET,10,13.5,-0.3,0.00,QB
+Andy Dalton,CIN,9,13.6,-0.4,0.00,QB
+Kirk Cousins,WAS,9,12.8,-0.5,0.00,QB
+Derek Carr,OAK,10,12.4,-0.5,0.00,QB
+Marcus Mariota,TEN,13,13.9,-0.6,0.00,QB
+Matt Ryan,ATL,11,14.4,-0.8,0.00,QB
+Ryan Tannehill,MIA,8,15.1,-0.8,0.00,QB
+Ryan Fitzpatrick,NYJ,11,15.4,-0.9,0.00,QB
+Tony Romo,DAL,7,12.9,-0.9,0.00,QB
+Alex Smith,KC,5,18.4,-1.1,0.00,QB
+Tom Brady,NE,9,10.5,-1.4,0.00,QB
+Jay Cutler,CHI,9,17.2,-1.7,0.00,QB
+Joe Flacco,BAL,8,17.3,-1.8,0.00,QB
+Brock Osweiler,HOU,9,19.5,-2.3,0.00,QB
+Teddy Bridgewater,MIN,6,20.6,-3.1,0.00,QB
+Robert Griffin,CLE,13,20.2,-3.5,0.00,QB
+Blaine Gabbert,SF,8,23.3,-5.1,0.00,QB
+Sam Bradford,PHI,4,,-5.7,0.00,QB
+Jared Goff,LA,8,,-6.4,0.00,QB
+Mark Sanchez,DEN,11,,-6.8,0.00,QB
+Todd Gurley (1),LA,8,1.6,6.8,0.93,RB
+David Johnson (1),ARI,9,1.5,6.8,0.87,RB
+Jamaal Charles (1),KC,5,2.8,5.9,0.81,RB
+Adrian Peterson (1),MIN,6,1.10,5.9,0.75,RB
+Lamar Miller (1),HOU,9,2.1,5.8,0.70,RB
+Devonta Freeman (1),ATL,11,2.10,5.5,0.64,RB
+Ezekiel Elliott (1),DAL,7,2.1,5.5,0.59,RB
+LeVeon Bell (1),PIT,8,2.10,4.9,0.54,RB
+Mark Ingram (1),NO,5,3.1,4.6,0.49,RB
+LeSean McCoy (1),BUF,10,3.5,4.5,0.45,RB
+Doug Martin (1),TB,6,3.6,4.1,0.41,RB
+Eddie Lacy (1),GB,4,3.7,3.8,0.37,RB
+CJ Anderson (1),DEN,11,4.1,3.1,0.34,RB
+Thomas Rawls (1),SEA,5,5.3,2.9,0.31,RB
+Matt Forte (1),NYJ,11,5.3,2.9,0.28,RB
+Latavius Murray (1),OAK,10,5.3,2.7,0.26,RB
+Carlos Hyde (1),SF,8,4.9,2.6,0.23,RB
+DeMarco Murray (1),TEN,13,6.7,2.3,0.21,RB
+Ryan Mathews (1),PHI,4,6.9,1.9,0.19,RB
+Giovani Bernard (2),CIN,9,7.5,1.9,0.17,RB
+Matt Jones (1),WAS,9,7.4,1.9,0.15,RB
+Dion Lewis (1),NE,9,5.9,1.8,0.14,RB
+Jeremy Langford (1),CHI,9,8.8,1.7,0.12,RB
+Duke Johnson (2),CLE,13,7.5,1.7,0.10,RB
+Jeremy Hill (1),CIN,9,7.1,1.7,0.09,RB
+Jonathan Stewart (1),CAR,7,7.1,1.7,0.07,RB
+Frank Gore (1),IND,10,7.4,1.5,0.06,RB
+Danny Woodhead (2),SD,11,7.8,1.4,0.04,RB
+Melvin Gordon (1),SD,11,8.7,1.3,0.03,RB
+Arian Foster (2),MIA,8,9.2,1.0,0.02,RB
+Ameer Abdullah (1),DET,10,9.4,0.9,0.01,RB
+Rashad Jennings (1),NYG,8,9.4,0.8,0.00,RB
+TJ Yeldon (1),JAX,5,10.1,0.3,0.00,RB
+Charles Sims (2),TB,6,10.7,0.0,0.00,RB
+Justin Forsett (1),BAL,8,11.5,-0.1,0.00,RB
+Isaiah Crowell (1),CLE,13,12.3,-0.4,0.00,RB
+DeAngelo Williams (2),PIT,8,10.6,-0.4,0.00,RB
+Theo Riddick (2),DET,10,12.4,-0.6,0.00,RB
+Chris Ivory (2),JAX,5,10.2,-0.6,0.00,RB
+LeGarrette Blount (2),NE,9,14.1,-1.1,0.00,RB
+Darren Sproles (2),PHI,4,15.4,-1.2,0.00,RB
+Bilal Powell (2),NYJ,11,12.3,-1.2,0.00,RB
+Shane Vereen (2),NYG,8,15.2,-1.4,0.00,RB
+Jay Ajayi (1),MIA,8,11.2,-1.7,0.00,RB
+Derrick Henry (2),TEN,13,13.1,-2.1,0.00,RB
+Tevin Coleman (2),ATL,11,13.2,-2.5,0.00,RB
+James Starks (2),GB,4,16.5,-2.6,0.00,RB
+Jerick McKinnon (2),MIN,6,15.7,-3.1,0.00,RB
+Chris Thompson (2),WAS,9,17.4,-3.1,0.00,RB
+Javorius Allen (2),BAL,8,15.3,-3.1,0.00,RB
+CJ Prosise (3),SEA,5,14.7,-3.1,0.00,RB
+Jordan Howard (3),CHI,9,15.5,-3.4,0.00,RB
+DeAndre Washington (2),OAK,10,15.5,-3.5,0.00,RB
+Darren McFadden (2),DAL,7,17.1,-3.6,0.00,RB
+Shaun Draughn (2),SF,8,18.2,-3.6,0.00,RB
+Devontae Booker (2),DEN,11,17.3,-3.7,0.00,RB
+Chris Johnson (2),ARI,9,17.10,-4.0,0.00,RB
+Kenneth Dixon (3),BAL,8,15.1,-4.0,0.00,RB
+Karlos Williams (2),BUF,10,16.9,-4.1,0.00,RB
+Paul Perkins (3),NYG,8,17.10,-4.3,0.00,RB
+Antonio Brown (1),PIT,8,1.1,9.7,0.93,WR
+Julio Jones (1),ATL,11,1.3,8.7,0.87,WR
+Odell Beckham (1),NYG,8,1.4,8.2,0.81,WR
+DeAndre Hopkins (1),HOU,9,1.9,6.6,0.77,WR
+AJ Green (1),CIN,9,1.9,6.0,0.72,WR
+Dez Bryant (1),DAL,7,2.1,5.6,0.68,WR
+Brandon Marshall (1),NYJ,11,2.9,5.3,0.65,WR
+Allen Robinson (1),JAX,5,2.4,5.2,0.61,WR
+Alshon Jeffery (1),CHI,9,3.1,5.0,0.58,WR
+Jordy Nelson (1),GB,4,3.1,5.0,0.54,WR
+Keenan Allen (1),SD,11,3.1,4.6,0.51,WR
+Mike Evans (1),TB,6,2.10,4.5,0.48,WR
+Demaryius Thomas (1),DEN,11,3.9,4.2,0.45,WR
+Brandin Cooks (1),NO,5,3.3,4.2,0.42,WR
+TY Hilton (1),IND,10,3.9,4.1,0.39,WR
+Sammy Watkins (1),BUF,10,4.2,4.1,0.36,WR
+Amari Cooper (1),OAK,10,3.5,4.0,0.33,WR
+Randall Cobb (2),GB,4,4.8,3.3,0.31,WR
+Jarvis Landry (1),MIA,8,5.1,3.3,0.28,WR
+Jeremy Maclin (1),KC,5,4.8,3.2,0.26,WR
+Golden Tate (1),DET,10,5.2,3.2,0.24,WR
+Julian Edelman (1),NE,9,5.2,3.0,0.22,WR
+Eric Decker (2),NYJ,11,5.4,2.8,0.20,WR
+Larry Fitzgerald (2),ARI,9,6.9,2.8,0.18,WR
+Doug Baldwin (1),SEA,5,6.2,2.6,0.16,WR
+Kelvin Benjamin (1),CAR,7,6.1,2.4,0.14,WR
+Jordan Matthews (1),PHI,4,6.9,2.4,0.13,WR
+Michael Floyd (1),ARI,9,6.7,2.2,0.11,WR
+Donte Moncrief (2),IND,10,6.2,2.0,0.10,WR
+Emmanuel Sanders (2),DEN,11,7.7,2.0,0.08,WR
+John Brown (3),ARI,9,7.6,1.6,0.07,WR
+DeSean Jackson (2),WAS,9,9.3,1.5,0.06,WR
+DeVante Parker (2),MIA,8,8.1,1.5,0.05,WR
+Michael Crabtree (2),OAK,10,8.7,1.5,0.04,WR
+Allen Hurns (2),JAX,5,8.6,1.3,0.03,WR
+Torrey Smith (1),SF,8,11.3,1.0,0.03,WR
+Tyler Lockett (2),SEA,5,8.9,1.0,0.02,WR
+Marvin Jones (2),DET,10,8.9,0.8,0.01,WR
+Willie Snead (2),NO,5,11.1,0.6,0.01,WR
+Stefon Diggs (1),MIN,6,11.4,0.5,0.01,WR
+Kevin White (2),CHI,9,10.4,0.4,0.00,WR
+Sterling Shepard (3),NYG,8,10.8,0.3,0.00,WR
+Vincent Jackson (2),TB,6,12.4,-0.1,0.00,WR
+Corey Coleman (1),CLE,13,10.8,-0.1,0.00,WR
+Tavon Austin (1),LA,8,11.10,-0.3,0.00,WR
+Markus Wheaton (2),PIT,8,13.1,-0.4,0.00,WR
+Travis Benjamin (2),SD,11,12.5,-0.4,0.00,WR
+Josh Gordon (2),CLE,13,10.7,-0.4,0.00,WR
+Kamar Aiken (2),BAL,8,12.9,-0.9,0.00,WR
+Terrance Williams (2),DAL,7,16.9,-1.0,0.00,WR
+Laquon Treadwell (2),MIN,6,12.9,-1.0,0.00,WR
+Mohamed Sanu (2),ATL,11,14.8,-1.0,0.00,WR
+Steve Smith (1),BAL,8,13.2,-1.1,0.00,WR
+Rishard Matthews (1),TEN,13,15.5,-1.3,0.00,WR
+Phillip Dorsett (3),IND,10,14.8,-1.4,0.00,WR
+Devin Funchess (3),CAR,7,14.3,-1.5,0.00,WR
+Pierre Garcon (1),WAS,9,16.1,-1.5,0.00,WR
+Sammie Coates (3),PIT,8,14.8,-1.7,0.00,WR
+Kenny Britt (2),LA,8,19.8,-1.8,0.00,WR
+Michael Thomas (3),NO,5,14.3,-1.9,0.00,WR
+Rob Gronkowski (1),NE,9,1.9,5.6,0.78,TE
+Jordan Reed (1),WAS,9,4.10,3.7,0.63,TE
+Greg Olsen (1),CAR,7,5.6,3.2,0.50,TE
+Travis Kelce (1),KC,5,7.1,2.3,0.41,TE
+Delanie Walker (1),TEN,13,7.6,2.1,0.32,TE
+Coby Fleener (1),NO,5,8.2,2.0,0.24,TE
+Gary Barnidge (1),CLE,13,10.2,1.5,0.18,TE
+Zach Ertz (1),PHI,4,10.3,1.2,0.14,TE
+Antonio Gates (1),SD,11,11.1,1.0,0.09,TE
+Tyler Eifert (1),CIN,9,10.2,0.9,0.06,TE
+Jason Witten (1),DAL,7,14.1,0.8,0.03,TE
+Julius Thomas (1),JAX,5,10.5,0.4,0.01,TE
+Dwayne Allen (1),IND,10,12.9,0.3,0.00,TE
+Eric Ebron (1),DET,10,13.5,-0.1,0.00,TE
+Zach Miller (1),CHI,9,14.6,-0.2,0.00,TE
+Martellus Bennett (2),NE,9,13.7,-0.4,0.00,TE
+Ladarius Green (1),PIT,8,13.9,-0.7,0.00,TE
+Charles Clay (1),BUF,10,16.6,-0.7,0.00,TE
+Jimmy Graham (1),SEA,5,14.7,-0.9,0.00,TE
+Kyle Rudolph (1),MIN,6,18.4,-1.2,0.00,TE
+Jordan Cameron (1),MIA,8,17.3,-1.3,0.00,TE
+Clive Walford (2),OAK,10,17.2,-1.5,0.00,TE
+Will Tye (2),NYG,8,18.1,-1.5,0.00,TE
+Austin Seferian-Jenkins (2),TB,6,17.2,-1.9,0.00,TE
+Vance McDonald (1),SF,8,18.5,-1.9,0.00,TE
+Stephen Gostkowski,NE,9,,0.4,0.23,K
+Steven Hauschka,SEA,5,,0.3,0.20,K
+Justin Tucker,BAL,8,,0.2,0.15,K
+Mason Crosby,GB,4,,0.0,0.10,K
+Dan Bailey,DAL,7,,0.0,0.05,K
+Chandler Catanzaro,ARI,9,,0.0,0.00,K
+Adam Vinatieri,IND,10,,0.0,0.00,K
+Graham Gano,CAR,7,,0.0,0.00,K
+Brandon McManus,DEN,11,,0.0,0.00,K
+Blair Walsh,MIN,6,,0.0,0.00,K
+Cairo Santos,KC,5,,-0.1,0.00,K
+Josh Brown,NYG,8,,-0.2,0.00,K
+Chris Boswell,PIT,8,,-0.3,0.00,K
+Matt Prater,DET,10,,-0.4,0.00,K
+Dan Carpenter,BUF,10,,-0.4,0.00,K
+Seattle Seahawks,SEA,5,,1.3,0.34,DEF
+Denver Broncos,DEN,11,,1.2,0.30,DEF
+Arizona Cardinals,ARI,9,,1.1,0.26,DEF
+Carolina Panthers,CAR,7,,1.0,0.25,DEF
+Houston Texans,HOU,9,,0.9,0.13,DEF
+Minnesota Vikings,MIN,6,,0.5,0.11,DEF
+Kansas City Chiefs,KC,5,,0.4,0.00,DEF
+Los Angeles Rams,LA,8,,0.1,0.00,DEF
+New England Patriots,NE,9,,0.1,0.00,DEF
+Cincinnati Bengals,CIN,9,,0.0,0.00,DEF
+New York Jets,NYJ,11,,0.0,0.00,DEF
+Green Bay Packers,GB,4,,0.0,0.00,DEF
+Buffalo Bills,BUF,10,,-0.2,0.00,DEF
+Pittsburgh Steelers,PIT,8,,-0.2,0.00,DEF
+Oakland Raiders,OAK,10,,-0.5,0.00,DEF
