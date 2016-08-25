@@ -1869,7 +1869,7 @@
       "config":{
         "teams":{
           "number":10,
-          "teamNames":["Jeff","Steve L","Bryant","Norm","Colin","Justin","Conner","Steve S","Ryan","Harrison"],
+          "teamNames":["Jeff","Steve L","Bryant","Norm","Colin","Conner","Justin","Steve S","Ryan","Harrison"],
           "teams":[]
         },
         "rounds":{
@@ -1893,19 +1893,19 @@
                 "player":"Devonta Freeman"
             },
           {
-            "team_num":6,
+            "team_num":7,
             "round_num":3,
             "player":"Julio Jones"
           },
           {
-            "team_num":6,
+            "team_num":7,
             "round_num":7,
             "player":"Allen Robinson"
           },
             {
-                "team_num":6,
-                "round_num":6,
-                "player":"TJ Yeldon"
+                "team_num":7,
+                "round_num":4,
+                "player":"Brandon Marshall"
             },
           {
             "team_num":4,
@@ -1948,17 +1948,17 @@
                 "player":"Andrew Luck"
             },
           {
-            "team_num":7,
+            "team_num":6,
             "round_num":4,
             "player":"LeVeon Bell"
           },
           {
-            "team_num":7,
+            "team_num":6,
             "round_num":13,
             "player":"Carolina Panthers"
           },
             {
-                "team_num":7,
+                "team_num":6,
                 "round_num":9,
                 "player":"Carlos Hyde"
             },
