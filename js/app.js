@@ -11,6 +11,7 @@ angular
             $scope.draftTime = false;
             $scope.selPlayer=null;
             $scope.selField=null;
+            $scope.manName = null;
             $scope.config = null;
             LoadPlayersService.fetch().then(function(data) {
                 $scope.players= data.players;
@@ -18,7 +19,6 @@ angular
                     n.available = true;
                 })
                 if (data.configOptions){
-                    console.log("YAHOOEY");
                     $scope.configOptions = data.configOptions;
                 }
             })
@@ -44,7 +44,6 @@ angular
 
         $scope.changeName = function(team) {
             $scope.teamData = team;
-            console.log(team.roster);
             $scope.editNameModal.$promise.then($scope.editNameModal.show);
         };
 
@@ -102,6 +101,21 @@ angular
         $scope.draftPlayer = function(){
             $scope.addKeeper();
             $scope.selField = $scope.nextOnTheClock();
+        }
+
+        $scope.submitMan = function(){
+            var man = {
+                "name":$scope.manName,
+                "pos":"MANUAL",
+                "bw":25,
+                "tm":"MAN"
+            };
+            console.log($scope.players);
+            $scope.players.push(man);
+            $scope.selPlayer = man;
+            $scope.addKeeper();
+            $scope.selField = $scope.nextOnTheClock();
+            $scope.manName = "";
         }
 
         $scope.simPick = function(){

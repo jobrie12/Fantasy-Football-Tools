@@ -293,7 +293,7 @@
             "tm": "GB",
             "bw": 4,
             "adp": 4.9,
-            "val": 3.5,
+            "val": 3.4,
             "ps": 0.54,
             "pos": "QB"
         },
@@ -365,7 +365,7 @@
             "tm": "SEA",
             "bw": 5,
             "adp": 5.8,
-            "val": 3,
+            "val": 2.8,
             "ps": 0.36,
             "pos": "QB"
         },
@@ -580,7 +580,7 @@
             "name": "Drew Brees",
             "tm": "NO",
             "bw": 5,
-            "adp": 6.7,
+            "adp": 6.8,
             "val": 1.7,
             "ps": 0.14,
             "pos": "QB"
@@ -1869,7 +1869,7 @@
       "config":{
         "teams":{
           "number":10,
-          "teamNames":["Jeff","Steve L","Bryant","Norm","Colin","Conner","Justin","Steve S","Ryan","Harrison"],
+          "teamNames":["Jeff","Steve L","Bryant","Norm","Colin","Conner","Justin","Ryan","Steve S","Harrison"],
           "teams":[]
         },
         "rounds":{
@@ -1889,8 +1889,8 @@
           },
             {
                 "team_num":1,
-                "round_num":2,
-                "player":"Devonta Freeman"
+                "round_num":14,
+                "player":"Jeremy Hill"
             },
           {
             "team_num":7,
@@ -1923,17 +1923,17 @@
             "player":"Marcus Mariota"
           },
           {
-            "team_num":9,
+            "team_num":8,
             "round_num":9,
             "player":"Odell Beckham"
           },
           {
-            "team_num":9,
+            "team_num":8,
             "round_num":16,
             "player":"Kelvin Benjamin"
           },
             {
-                "team_num":9,
+                "team_num":8,
                 "round_num":6,
                 "player":"Doug Martin"
             },
@@ -1942,6 +1942,11 @@
             "round_num":3,
             "player":"DeAndre Hopkins"
           },
+            {
+                "team_num":2,
+                "round_num":8,
+                "player":"John Brown"
+            },
             {
                 "team_num":2,
                 "round_num":9,
@@ -1978,12 +1983,12 @@
                 "player":"Jordy Nelson"
           },
           {
-            "team_num":8,
+            "team_num":9,
             "round_num":1,
             "player":"Antonio Brown"
           },
           {
-            "team_num":8,
+            "team_num":9,
             "round_num":7,
             "player":"Greg Olsen"
           },

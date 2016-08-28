@@ -160,21 +160,6 @@
                             <button class="btn btn-success" data-ng-click="recPick()" data-ng-if="!selPlayer">Recommend Pick</button>
                             <button class="btn btn-primary" data-ng-click="simPick()" data-ng-if="!selPlayer">Sim Pick</button>
                             <br>
-                            <!--<br>
-                            <div class="row">
-                                <div class="col-lg-3 col-md-3"></div>
-                                <div class="col-lg-6 col-md-6">
-                                    <span class="input-group-addon" id="sizing-addon3">Add Player by Name</span>
-                                    <input type="text" class="form-control" data-ng-model="manName">
-                                    <div data-ng-if="manName">
-                                        <br>
-                                        <button class="btn btn-success" data-ng-click="submitMan()" data-ng-if="manName">Submit Manual Player</button>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-3"></div>
-                            </div>-->
-
-                            <br>
                         </div>
                         <div style="text-align:center;" data-ng-if="draftTime">
                         </div>
@@ -216,7 +201,7 @@
                                 </td>
                                 <td style="text-align: center; background-color:{{round.picks[team.number]?colorScale[round.picks[team.number].pos]:''}};" data-ng-repeat="team in teams.teams">
                                     <a style="cursor: pointer;" data-ng-click="selectField(round,team)" data-ng-if="!round.picks[team.number] && round.number%2!=0">{{round.number}}.{{team.number}}</a>
-                                    <a style="cursor: pointer;" data-ng-click="selectField(round,team)" data-ng-if="!round.picks[team.number] && round.number%2==0">{{round.number}}.{{teams.number - (team.number-1)}}</a>
+                                    <a style="cursor: pointer;" data-ng-click="selectField(round,team)" data-ng-if="!round.picks[team.number] && round.number%2==0">{{teams.number}} -- {{round.number}}.{{(teams.number+1)-(team.number)}}</a>
                                     <div data-ng-click="selectField(round,team)" data-ng-if="round.picks[team.number]">{{round.picks[team.number].name}}</div>
                                 </td>
                             </tr>
