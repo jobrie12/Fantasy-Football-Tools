@@ -455,6 +455,432 @@ angular
 
         init();
     })
+    .controller('cardsharksCtrl', function($scope){
+        function init(){
+            $scope.cardConfiguration = {
+                "suits":[
+                    {
+                        "name":"Hearts",
+                        "symbol":" &hearts;",
+                        "color":"red"
+                    },
+                    {
+                        "name":"Diamonds",
+                        "symbol":" &diams;",
+                        "color":"red"
+                    },
+                    {
+                        "name":"Spades",
+                        "symbol":" &spades;",
+                        "color":"black"
+                    },
+                    {
+                        "name":"Clubs",
+                        "symbol":" &clubs;",
+                        "color":"black"
+                    }
+                ],
+                "values":[
+                    {
+                        "name": "Two",
+                        "symbol":"2",
+                        "value": 2
+                    },
+                    {
+                        "name": "Three",
+                        "symbol":"3",
+                        "value": 3
+                    },
+                    {
+                        "name": "Four",
+                        "symbol":"4",
+                        "value": 4
+                    },
+                    {
+                        "name": "Five",
+                        "symbol":"5",
+                        "value": 5
+                    },
+                    {
+                        "name": "Six",
+                        "symbol":"6",
+                        "value": 6
+                    },
+                    {
+                        "name": "Seven",
+                        "symbol":"7",
+                        "value": 7
+                    },
+                    {
+                        "name": "Eight",
+                        "symbol":"8",
+                        "value": 8
+                    },
+                    {
+                        "name": "Nine",
+                        "symbol":"9",
+                        "value": 9
+                    },
+                    {
+                        "name": "Ten",
+                        "symbol":"10",
+                        "value": 10
+                    },
+                    {
+                        "name": "Jack",
+                        "symbol":"J",
+                        "value": 10
+                    },
+                    {
+                        "name": "Queen",
+                        "symbol":"Q",
+                        "value": 10
+                    },
+                    {
+                        "name": "King",
+                        "symbol":"K",
+                        "value": 10
+                    },
+                    {
+                        "name": "Ace",
+                        "symbol":"A",
+                        "value": 1
+                    }
+                ]
+            };
+
+            $scope.newGame();
+
+            /* Phases of the Game:
+             * Pick Deck Size and Shuffle
+             * Wager And Side Bet
+             * Accept or Next
+             * Flip Starter Card
+             * Non-Dealer plays First
+             * Alternate Plays
+             *
+             * */
+
+            $scope.phase = "Select Deck";
+        }
+
+        function shuffle(array) {
+            var currentIndex = array.length, temporaryValue, randomIndex;
+
+            // While there remain elements to shuffle...
+            while (0 !== currentIndex) {
+
+                // Pick a remaining element...
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex -= 1;
+
+                // And swap it with the current element.
+                temporaryValue = array[currentIndex];
+                array[currentIndex] = array[randomIndex];
+                array[randomIndex] = temporaryValue;
+            }
+
+            return array;
+        }
+
+        init();
+    })
+    .controller('cribbageCtrl',function($scope, $modal, $http, $log){
+        var data = $scope.data = {};
+
+        function init(){
+            $scope.cardConfiguration = {
+                "suits":[
+                    {
+                        "name":"Hearts",
+                        "symbol":" &hearts;",
+                        "color":"red"
+                    },
+                    {
+                        "name":"Diamonds",
+                        "symbol":" &diams;",
+                        "color":"red"
+                    },
+                    {
+                        "name":"Spades",
+                        "symbol":" &spades;",
+                        "color":"black"
+                    },
+                    {
+                        "name":"Clubs",
+                        "symbol":" &clubs;",
+                        "color":"black"
+                    }
+                ],
+                "values":[
+                    {
+                        "name": "Two",
+                        "symbol":"2",
+                        "value": 2
+                    },
+                    {
+                        "name": "Three",
+                        "symbol":"3",
+                        "value": 3
+                    },
+                    {
+                        "name": "Four",
+                        "symbol":"4",
+                        "value": 4
+                    },
+                    {
+                        "name": "Five",
+                        "symbol":"5",
+                        "value": 5
+                    },
+                    {
+                        "name": "Six",
+                        "symbol":"6",
+                        "value": 6
+                    },
+                    {
+                        "name": "Seven",
+                        "symbol":"7",
+                        "value": 7
+                    },
+                    {
+                        "name": "Eight",
+                        "symbol":"8",
+                        "value": 8
+                    },
+                    {
+                        "name": "Nine",
+                        "symbol":"9",
+                        "value": 9
+                    },
+                    {
+                        "name": "Ten",
+                        "symbol":"10",
+                        "value": 10
+                    },
+                    {
+                        "name": "Jack",
+                        "symbol":"J",
+                        "value": 10
+                    },
+                    {
+                        "name": "Queen",
+                        "symbol":"Q",
+                        "value": 10
+                    },
+                    {
+                        "name": "King",
+                        "symbol":"K",
+                        "value": 10
+                    },
+                    {
+                        "name": "Ace",
+                        "symbol":"A",
+                        "value": 1
+                    }
+                ]
+            };
+
+            $scope.newGame();
+
+             /* Phases of the Game:
+              * Deal Hands
+              * Add To Crib
+              * Flip Starter Card
+              * Non-Dealer plays First
+              * Alternate Plays
+              *
+              * */
+
+            $scope.phase = "start";
+        }
+
+        $scope.newGame = function(){
+            $scope.players = 2;
+            data.players = [];
+            $scope.dealer = 0;
+            var index = 0;
+            while (index < $scope.players){
+                data.players.push({
+                    index : index,
+                    hand : [],
+                    score : 0,
+                    dealer: index==0
+                })
+                ++index;
+            }
+
+            $scope.buildDeck();
+        }
+
+        $scope.buildDeck = function(){
+            $scope.deck = [];
+            var config = $scope.cardConfiguration;
+            config.suits.each(function(suit){
+                config.values.each(function(value){
+                    $scope.deck.push({
+                        name: value.name + " of " + suit.name,
+                        symbol: value.symbol + suit.symbol,
+                        color:suit.color,
+                        suit: suit.name,
+                        face: value.name,
+                        value: value.value,
+                        selected: false
+                    });
+                })
+            })
+            $scope.deck = shuffle($scope.deck);
+        };
+
+        $scope.dealHands = function(){
+            data.players.each(function(player){
+                var cards = 0;
+                player.hand = [];
+                player.copy = [];
+                while (cards < 6){
+                    player.hand.push($scope.deck[0]);
+                    player.copy.push($scope.deck[0]);
+                    $scope.deck.shift();
+                    ++cards;
+                }
+            });
+            $scope.phase = 'add to crib';
+            data.starter = null;
+            data.total = 0;
+            data.play = [];
+            data.crib = [];
+        };
+
+        $scope.updateCards = function(card){
+            if ($scope.phase == 'add to crib'){
+                card.selected = !card.selected;
+                if (card.selected){
+                    data.crib.push(card);
+                } else {
+                    data.crib.remove(function(el) { return el.name === card.name; });
+
+                }
+            } else if ($scope.phase == 'play'){
+                var index = $scope.playerTurn%2;
+                data.play.push(card);
+                data.total += card.value;
+                scoreCards(data.play, index);
+                data.players[index].hand.remove(function(el) { return el.name === card.name; });
+                $scope.playerTurn++;
+            }
+        };
+
+        function scoreCards(cards, index) {
+            if ($scope.phase == 'play'){
+                scorePegging(index);
+            } else {
+                console.log(scoreFifteens(cards));
+                console.log(scorePairs(cards));
+            }
+
+        }
+
+        function scorePegging(index){
+            if (data.total == 15){
+                data.players[index].score += 2;
+            } else if (data.total == 31){
+                data.players[index].score += 2;
+            }
+        }
+
+        function scoreFifteens(cards){
+            var hand = cards.push(data.starter);
+            var score = 0;
+
+            var i = 0;
+            var j = 1;
+            var total = 0;
+
+            for (i=0; i < hand.length()-1; i++){
+                total = hand[i].value;
+                for (j = i + 1; j < hand.length; j++) {
+                    total += hand[j];
+                    if (total == 15) {
+                        score += 2;
+                    }
+
+                    if (total > 14) {
+                        total = hand[i];
+                    }
+                }
+            }
+            
+            return score;
+        }
+
+        function scorePairs(cards){
+            var hand = cards.push(data.starter);
+            var score = 0;
+
+            var i = 0;
+            var j = 1;
+
+            for (i=0; i < hand.length()-1; i++){
+                for (j = i + 1; j < hand.length; j++) {
+                    if (hand[i].symbol === hand[j].symbol){
+                        score += 2;
+                    }
+                }
+            }
+
+            return score;
+        }
+
+        $scope.finalizeCrib = function(){
+            $scope.phase = 'play';
+            data.starter = $scope.deck[0];
+            $scope.deck.shift();
+
+            data.players.each(function(player){
+                var index = 0, removed = 0;
+                while (removed < 2){
+                    var card = player.hand[index];
+                    if (card.selected){
+                        player.hand.remove(function(el) { return el.name === card.name; });
+                        player.copy.remove(function(el) { return el.name === card.name; });
+                        ++removed;
+                    } else index++;
+                }
+            });
+
+            $scope.playerTurn = $scope.dealer==0?1:0;
+            if (data.starter.face == "Jack"){
+                data.players[$scope.dealer].score += 2;
+            }
+        };
+
+        function shuffle(array) {
+            var currentIndex = array.length, temporaryValue, randomIndex;
+
+            // While there remain elements to shuffle...
+            while (0 !== currentIndex) {
+
+                // Pick a remaining element...
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex -= 1;
+
+                // And swap it with the current element.
+                temporaryValue = array[currentIndex];
+                array[currentIndex] = array[randomIndex];
+                array[randomIndex] = temporaryValue;
+            }
+
+            return array;
+        }
+
+        init();
+
+    })
+    .filter('unsafe', function($sce) {
+        return function(val) {
+            return $sce.trustAsHtml(val);
+        };
+    })
     .factory('LoadPlayersService', function($q,$timeout,$http) {
         var players = {
             fetch: function(callback) {
