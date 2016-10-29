@@ -529,25 +529,84 @@ angular
                     {
                         "name": "Jack",
                         "symbol":"J",
-                        "value": 10
+                        "value": 11
                     },
                     {
                         "name": "Queen",
                         "symbol":"Q",
-                        "value": 10
+                        "value": 12
                     },
                     {
                         "name": "King",
                         "symbol":"K",
-                        "value": 10
+                        "value": 13
                     },
                     {
                         "name": "Ace",
                         "symbol":"A",
-                        "value": 1
+                        "value": 14
                     }
                 ]
             };
+
+            $scope.ties = [
+                {
+                    point:1,
+                    twoKPay : 10,
+                    acePay: 40
+                },
+                {
+                    point:2,
+                    twoKPay : 5,
+                    acePay: 20
+                },
+                {
+                    point:3,
+                    twoKPay : 4,
+                    acePay: 10
+                },
+                {
+                    point:4,
+                    twoKPay : 3,
+                    acePay: 6
+                },
+                {
+                    point:5,
+                    twoKPay : 2,
+                    acePay: 4
+                },
+                {
+                    point:6,
+                    twoKPay : 1,
+                    acePay: 2
+                }
+            ];
+
+            $scope.wins = [
+                {
+                    point:'0-2 Correct Guesses',
+                    win: '0',
+                    val:0
+                },
+                {
+                    point:'3-5 Correct Guesses',
+                    win: '1 to 1',
+                    val:1
+                },
+                {
+                    point:'6 Correct Guesses',
+                    win: '3 to 1',
+                    val:3
+                }
+            ];
+
+            $scope.deckSizes = [4, 6, 8];
+            $scope.deckSize = 4;
+
+            $scope.bet = {
+                wager:0,
+                tie:0
+            }
 
             $scope.newGame();
 
@@ -561,8 +620,115 @@ angular
              *
              * */
 
-            $scope.phase = "Select Deck";
+
         }
+
+        $scope.newGame = function() {
+            $scope.phase = "New Game";
+            $scope.gameOver = false;
+            $scope.card = null;
+            $scope.prevCard = null;
+            $scope.message = null;
+            $scope.correct = 0;
+        };
+
+        $scope.startGame = function() {
+            $scope.phase = "Start Game";
+            $scope.buildDeck();
+        }
+
+        $scope.playGame = function(play) {
+            $scope.message = null;
+            if (($scope.correct == 0) && !play){
+                $scope.card = dealCard();
+                $scope.phase = "Play or Switch"
+            } else {
+                $scope.phase = "Play Game";
+            }
+        }
+
+        $scope.switch = function(){
+            $scope.card = dealCard();
+            $scope.playGame(true);
+        }
+
+        $scope.reveal = function(high){
+            $scope.prevCard = $scope.card
+            $scope.card = dealCard();
+
+            if (high){
+                $scope.message = "You Picked Higher,"
+            } else {
+                $scope.message = "You Picked Lower,"
+            }
+
+            if ($scope.card.value == $scope.prevCard.value){
+                $scope.gameOver = true;
+                $scope.message += " but it's a Tie!";
+                if ($scope.bet.tie > 0){
+                    if ($scope.card.value == 14){
+                        $scope.message += " You've won " + ($scope.bet.tie * $scope.ties[$scope.correct].acePay) + " ether!";
+                    } else {
+                        $scope.message += " You've won " + ($scope.bet.tie * $scope.ties[$scope.correct].twoKPay) + " ether!";
+                    }
+                } else {
+                    $scope.message += " You didn't place a Tie Bet, better luck next time!"
+                }
+            } else if ($scope.card.value > $scope.prevCard.value && !high){
+                $scope.gameOver = true;
+                $scope.message += " but it was Higher!"
+            } else if ($scope.card.value < $scope.prevCard.value && high){
+                $scope.gameOver = true;
+                $scope.message += " but it was Lower!"
+            } else {
+                $scope.message += " and you were Correct!";
+                $scope.correct++;
+                if ($scope.correct == 3){
+                    $scope.message += " Congratulations, you've made it to Level 2! You are guaranteed your money now! You also get a chance to switch your card!";
+                    $scope.phase = "Play or Switch"
+                } else if ($scope.correct == 6){
+                    $scope.message += " YOU'VE JUST WON THE GAME! Your payout is " + Math.round($scope.wins[2].val * $scope.bet.wager * 100)/100 + " ether!";
+                    $scope.gameOver = true;
+                }
+            }
+
+            if ($scope.gameOver && $scope.correct >=3 && $scope.correct < 6){
+                $scope.message += " Hey! At least you won your bet of " + $scope.bet.wager +" ether back!"
+            }
+        }
+
+        function dealCard() {
+            var card = $scope.deck[0];
+            $scope.deck.shift();
+            return card;
+        }
+
+        $scope.buildDeck = function(){
+            $scope.deck = [];
+            var index = 0;
+            while (index < $scope.deckSize) {
+                var config = $scope.cardConfiguration;
+                config.suits.each(function(suit){
+                    config.values.each(function(value){
+                        $scope.deck.push({
+                            name: value.name + " of " + suit.name,
+                            symbol: value.symbol + suit.symbol,
+                            color:suit.color,
+                            suit: suit.name,
+                            face: value.name,
+                            value: value.value,
+                            selected: false
+                        });
+                    })
+                })
+                ++index;
+            }
+            $scope.deck = shuffle(shuffle(shuffle(shuffle($scope.deck))));
+        };
+
+        $scope.setDeckSize = function (size){
+            $scope.deckSize = size;
+        };
 
         function shuffle(array) {
             var currentIndex = array.length, temporaryValue, randomIndex;
