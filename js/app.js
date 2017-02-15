@@ -1,5 +1,37 @@
 angular
-    .module('FantasyFootballTools',['mgcrea.ngStrap'])
+    .module('FantasyFootballTools',['mgcrea.ngStrap','ui.router'])
+    .config([
+        '$stateProvider',
+        '$urlRouterProvider',
+        function($stateProvider, $urlRouterProvider) {
+
+            var draftState = {
+                name: 'draft',
+                url: '/draft',
+                templateUrl: 'templates/draft.tpl.html',
+                controller: 'draftCtrl'
+            };
+
+            var cribbageState = {
+                name: 'cribbage',
+                url: '/cribbage',
+                templateUrl: 'templates/cribbage.tpl.html',
+                controller: 'cribbageCtrl'
+            };
+
+            var cardsharksState = {
+                name: 'cardsharks',
+                url: '/cardsharks',
+                templateUrl: 'templates/cardsharks.tpl.html',
+                controller: 'cardsharksCtrl'
+            };
+
+            $stateProvider.state(draftState);
+            $stateProvider.state(cribbageState);
+            $stateProvider.state(cardsharksState);
+
+            $urlRouterProvider.otherwise('draft');
+        }])
     .controller('draftCtrl',function($scope, LoadPlayersService, $modal, $http,  $log){
         var init = function(){
 
