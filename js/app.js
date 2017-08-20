@@ -213,21 +213,26 @@ angular
                 var k = 0;
                 var fullteam = $scope.teams.teams[team-1];
                 while ($scope.selPlayer == null){
-                    if ($scope.players[k].available == true){
-                        var player = $scope.players[k];
-                        if ($scope.starter(player,fullteam,k) == true){
-                            $scope.selPlayer = player;
-                        } else {
-                            console.log("Passed on " + player.name);
+                    if ($scope.players[k]){
+                        if ($scope.players[k].available == true){
+                            var player = $scope.players[k];
+                            if ($scope.starter(player,fullteam,k) == true){
+                                $scope.selPlayer = player;
+                            } else {
+                                console.log("Passed on " + player.name);
+                            }
                         }
+                        k++;
+                    } else {
+
                     }
-                    k++;
+
                 }
                 if (!noadd){
                     $scope.addKeeper();
                 }
             }
-        }
+        };
 
         $scope.addKeeper = function(){
             $scope.selPlayer.round = $scope.selField.round;
@@ -242,7 +247,7 @@ angular
 
             $scope.buildRoster(team);
 
-        }
+        };
 
         $scope.buildRoster = function(team){
             var starters = {
@@ -392,8 +397,6 @@ angular
             if (count[player.pos] >=max[player.pos]){return false;}
 
             if (team && $scope.strategy == 'BVN'){
-
-
                 if (starters[player.pos] >= cap[player.pos]){
                     if (['RB','WR','TE'].indexOf(player.pos) > -1){
                         if (starters['FLEX']<cap['FLEX']){
@@ -419,7 +422,7 @@ angular
             } else if ($scope.strategy == 'Equal'){
                 if (player.pos == 'RB'){
                     var WRDiff = (count['RB'] - count['WR']) * .25;
-                    if (WRDiff > 0){
+                    if (i > 14 || WRDiff > 0){
                         var dex = index + 1;
                         var nextPlayer = $scope.players[dex];
                         while (nextPlayer.val > (player.val - WRDiff)){
@@ -436,7 +439,7 @@ angular
                     } return true;
                 } else if (player.pos == 'WR'){
                     var RBDiff = (count['WR'] - count['RB']) * .25;
-                    if (RBDiff > 0){
+                    if (i > 14 || RBDiff > 0){
                         var dex = index + 1;
                         var nextPlayer = $scope.players[dex];
                         while (nextPlayer.val > (player.val - RBDiff)){
