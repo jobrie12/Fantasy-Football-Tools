@@ -1078,7 +1078,7 @@
    "adp": null,
    "val": -0.3,
    "ps": 0.5,
-   "pos": "DEF"
+   "pos": "DST"
  },
  {
    "name": "Tyrod Taylor",
@@ -1105,7 +1105,7 @@
    "adp": null,
    "val": -0.5,
    "ps": 0.5,
-   "pos": "DEF"
+   "pos": "DST"
  },
  {
    "name": "Stephen Gostkowski",
@@ -1159,7 +1159,7 @@
    "adp": null,
    "val": -0.7,
    "ps": 0.5,
-   "pos": "DEF"
+   "pos": "DST"
  },
  {
    "name": "Duke Johnson (2)",
@@ -1195,7 +1195,7 @@
    "adp": null,
    "val": -0.9,
    "ps": 0.5,
-   "pos": "DEF"
+   "pos": "DST"
  },
  {
    "name": "Corey Davis (1)",
@@ -1276,7 +1276,7 @@
    "adp": null,
    "val": -1.1,
    "ps": 0.5,
-   "pos": "DEF"
+   "pos": "DST"
  },
  {
    "name": "Cole Beasley (2)",
@@ -1339,7 +1339,7 @@
    "adp": null,
    "val": -1.3,
    "ps": 0.5,
-   "pos": "DEF"
+   "pos": "DST"
  },
  {
    "name": "Blake Bortles",
@@ -1393,7 +1393,7 @@
    "adp": null,
    "val": -1.5,
    "ps": 0.5,
-   "pos": "DEF"
+   "pos": "DST"
  },
  {
    "name": "Darren McFadden (2)",
@@ -1438,7 +1438,7 @@
    "adp": null,
    "val": -1.7,
    "ps": 0.5,
-   "pos": "DEF"
+   "pos": "DST"
  },
  {
    "name": "Carson Wentz",
@@ -1537,7 +1537,7 @@
    "adp": null,
    "val": -1.9,
    "ps": 0.5,
-   "pos": "DEF"
+   "pos": "DST"
  },
  {
    "name": "OJ Howard (1)",
@@ -1582,7 +1582,7 @@
    "adp": null,
    "val": -2.1,
    "ps": 0.5,
-   "pos": "DEF"
+   "pos": "DST"
  },
  {
    "name": "Dustin Hopkins",
@@ -1600,7 +1600,7 @@
    "adp": null,
    "val": -2.3,
    "ps": 0.5,
-   "pos": "DEF"
+   "pos": "DST"
  },
  {
    "name": "Baltimore Ravens",
@@ -1609,7 +1609,7 @@
    "adp": null,
    "val": -2.5,
    "ps": 0.5,
-   "pos": "DEF"
+   "pos": "DST"
  },
  {
    "name": "Steven Hauschka",
@@ -1645,7 +1645,7 @@
    "adp": null,
    "val": -2.7,
    "ps": 0.5,
-   "pos": "DEF"
+   "pos": "DST"
  },
  {
    "name": "Shane Vereen (2)",
@@ -1690,7 +1690,7 @@
    "adp": null,
    "val": -2.9,
    "ps": 0.5,
-   "pos": "DEF"
+   "pos": "DST"
  },
  {
    "name": "Cincinnati Bengals",
@@ -1699,7 +1699,7 @@
    "adp": null,
    "val": -2.9,
    "ps": 0.5,
-   "pos": "DEF"
+   "pos": "DST"
  },
  {
    "name": "Jamaal Williams (2)",
